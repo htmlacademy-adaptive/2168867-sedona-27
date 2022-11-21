@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Ирина Лемешкина](https://up.htmlacademy.ru/adaptive/27/user/2168867).
-* Наставник: `Неизвестно`.
+* Наставник:[Сергей Остаповец](https://htmlacademy.ru/profile/seraphim)
 
 ---
 
