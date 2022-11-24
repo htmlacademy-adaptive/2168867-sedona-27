@@ -10,16 +10,17 @@
 <body class="page__body">
   <header class="main_header">
     <a class="main_header__logo">
-      <img class="main_header__logo-image" src="../source/img/logo.svg" width="185" height="96" alt="Уютный городок Седона">
+      <img class="main_header__logo-image" src="../source/img/logo.svg" width="185" height="96"
+        alt="Уютный городок Седона">
     </a>
     <nav class="main_nav">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Развернуть меню</span>
         <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2"/>
-          <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2"/>
-          <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2"/>
-          </svg>
+          <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2" />
+          <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2" />
+          <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2" />
+        </svg>
       </button>
       <div class="main_nav__container">
         <ul class="main_nav__list site_list">
@@ -43,76 +44,66 @@
   </header>
 
   <main class="main_container">
+    <h1 class="visually_hiden">Отзывы туристов Седоны</h1>
 
-    <h1 class="visually_hiden">Седона - городок в Аризоне, достойный вашего внимания</h1>
-
-    <section class="hero">
-      <div class="hero__wrapper">
-        <h2 class="hero__wrapper-title">
-          Седона — небольшой городок в Аризоне, заслуживающий большего!
-        </h2>
-        <p class="hero__wrapper-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+    <section class="leave_review">
+      <div class="leave_review--wrapper">
+        <h2 class="leave a review__title">Оставьте свой отзыв</h2>
+        <p class="leave a review__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о
+          посещенных вами достопримечательностях</p>
       </div>
     </section>
 
-    <section class="advantages">
-      <div class="advantages__wrapper">
-        <h2 class="visually_hiden">Преимущества Седоны перед другими городами Аризоны</h2>
-        <div class="advantages_photo advantages_photo--first"> <!--добавила тут модификатор для декоративной цифры, он тут вообще нужен и таким ли образом делается, плюс имя модификатора норм?-->
-          <h3 class="advantages_title">Настоящий городок</h3>
-          <p class="advantages_description">Седона не аттракцион для туристов, там течёт своя жизнь</p>
-        </div>
-        <dl class="advantages_list">
-          <div class="advantages_item advantages_item--housing">
-            <dt class="advantages_title">Жилье</dt>
-            <dd class="advantages_description">Рекомендуем пожить в настоящем мотеле, все как в кино!</dd>
-          </div>
-          <div class="advantages_item advantages_item--food">
-            <dt class="advantages_title">Еда</dt>
-            <dd class="advantages_description">Всегда заказывайте фирменный бургер, не разочаруетесь!</dd>
-          </div>
-          <div class="advantages_item advantages_item--gifts">
-            <dt class="advantages_title">Сувениры</dt>
-            <dd class="advantages_description">Не только китайского, но и местного производства!</dd>
-          </div>
-        </dl>
-        <div class="advantages_photo advantages_photo--second">
-          <h3 class="advantages_title">Там есть мост дьявола</h3>
-          <p class="advantages_description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-        </div>
-        <dl class="advantages_list">
-          <div class="advantages_item advantages_item--third">
-            <dt class="advantages_title">Небольшая площадь</dt>
-            <dd class="advantages_description">Все интересные места находятся очень близко</dd>
-          </div>
-          <div class="advantages_item advantages_item--fourth">
-            <dt class="advantages_title">Красивая дорога</dt>
-            <dd class="advantages_description">Ехать в Седону из Лас-Вегаса совсем не скучно!</dd>
-          </div>
-          <div class="advantages_item advantages_item--fifth">
-            <dt class="advantages_title">Мало туристов</dt>
-            <dd class="advantages_description">Большинство едет в Гранд-Каньон и толпится там</dd>
-          </div>
-        </dl>
+    <form class="review_form" action="https://echo.htmlacademy.ru/courses" method="post">
+      <div class="review_form--wrapper">
+        <!--нужна ли тут эта  обертка и если да, то одна на всю форму или на каждый  блок-->
+        <fieldset>
+          <legend>Представьтесь:</legend>
+          <input type="text" name="name" id="autor_name" value="Пётр">
+          <label for="autor_name">Имя*:</label>
+          <input type="text" name="surname" id="autor_surname" value="Пустота">
+          <label for="autor_surname">Фамилия*:</label>
+          <input type="text" name="patronymic" id="autor_patronymic" value="Викторович">
+          <label for="autor_patronymic">Отчество*:</label>
+        </fieldset>
+        <fieldset>
+          <legend>Контактная информация:</legend>
+          <input type="text" name="tel" id="autor_tel" value="Введите телефон">
+          <label for="autor_tel">Контактный телефон*:</label>
+          <input type="text" name="mail" id="autor_mail" value="Введите e-mail">
+          <label for="autor_mail">Электронная почта*:</label>
+        </fieldset>
+        <fieldset>
+          <legend>Ваше общее впечатление:</legend>
+          <input type="radio" id="review_good" checked>
+          <label for="review_good">Скорее положительное</label>
+          <input type="radio" id="review_negative">
+          <label for="review_negative">Скорее отрицательное</label>
+          <input type="radio" id="review_cant_say">
+          <label for="review_cant_say">Затрудняюсь ответить</label>
+        </fieldset>
+        <fieldset>
+          <legend>Посещенные достопримечательности:</legend>
+          <input type="checkbox" id="devil_bridge" checked>
+          <label for="devil_bridge">Мост Дьявола</label>
+          <input type="checkbox" id="mountain_bell" checked>
+          <label for="mountain_bell">Гора-Колокол</label>
+          <input type="checkbox" id="slide_park" checked>
+          <label for="slide_park">Слайд-парк</label>
+          <input type="checkbox" id="red_rocks">
+          <label for="red_rocks">Красные скалы</label>
+        </fieldset>
+        <fieldset>
+          <legend>Опишите свои эмоции:</legend>
+          <textarea name="comment" id="autor_comment" rows="10">Опишите подробно все свои восторги </textarea>
+          <input type="submit" class="review_send" value="Отправить отзыв">
+        </fieldset>
+        <p class="_form_footnote">* — обязательные поля</p>
       </div>
-    </section>
+    </form>
 
-    <section class="booking_form">
-      <div class="booking_form__wrapper">
-        <h2 class="booking_form__title">Заинтересовались?</h2>
-        <p class="booking_form__decsription">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
-          гостиниц в Cедоне</p>
-        <button class="booking_form__button" type="button">Найти гостиницу</button>
-      </div>
-    </section>
-
-    <section class="map">
-      <div class="map__wrapper">
-        <h2 class="visually_hiden">Седона на карте</h2>
-         <img class="map_image" src="../source/img/index/map.jpg" alt="Как до нас добраться"> <!--карта это вроде контентное изображение, вставляем в верстку, но какой размер указывать?.-->
-      </div>
-    </section>
   </main>
+
 
   <footer class="main_footer">
     <div class="main_footer__wrapper">
@@ -177,6 +168,27 @@
     </div>
 
   </footer>
+
+<!--подумала что если по макету две модалки на разную ситуацию. то и верстаем две, а через jc уже будут навешиваться события когда какое открыть-->
+  <div class="modal_wrong">
+    <div class="modal_wrong__wrapper">
+      <section class="modal_wrong--content">
+        <h2 class="modal_wrong--title">Что-то пошло не так!</h2>
+        <p class="modal_wrong--text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="accept">Ok</button>
+      </section>
+    </div>
+  </div>
+
+  <div class="modal_correct">
+    <div class="modal_correct__wrapper">
+      <section class="modal_correc--content">
+        <h2 class="modal_correct--title">Ваш отзыв отправлен!</h2>
+        <p class="modal_correct--text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        <button class="close">Закрыть окно</button>
+      </section>
+    </div>
+  </div>
 
 </body>
 
