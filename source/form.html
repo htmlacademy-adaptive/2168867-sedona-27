@@ -1,195 +1,244 @@
 <!DOCTYPE html>
-<html class="body" lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
-  <title>Седона</title>
+  <title>Форма отзыва</title>
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body class="page__body">
-  <header class="main_header">
-    <a class="main_header__logo">
-      <img class="main_header__logo-image" src="../source/img/logo.svg" width="185" height="96"
-        alt="Уютный городок Седона">
-    </a>
-    <nav class="main_nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Развернуть меню</span>
-        <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2" />
-          <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2" />
-          <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2" />
-        </svg>
-      </button>
-      <div class="main_nav__container">
-        <ul class="main_nav__list site_list">
-          <li class="site_list__item site_list__item--current">
-            <a href="#">
+  <div class="page-container">
+    <header class="main-header">
+      <a class="main-header__logo" href="index.html">
+        <img src="./img/logo.svg" width="185" height="96" alt="Уютный городок Седона.">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hiden">Развернуть меню</span>
+          <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2" />
+            <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2" />
+            <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2" />
+          </svg>
+        </button>
+
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--current">
+            <a href="index.html">
               Главная</a>
           </li>
-          <li class="site_list__item">
+          <li class="site-list__item">
             <a href="catalog.html">
               Фото и видео</a>
           </li>
-          <li class="site_list__item">
-            <a href="form.html">Форма отзыва</a>
+          <li class="site-list__item">
+            <a href="#">Форма отзыва</a>
           </li>
-          <li class="site_list__item">
+          <li class="site-list__item">
             <a href="#">Html academy</a>
           </li>
         </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div class="hero-photo">
+        <h2 class="visually-hiden">Фото гор Седоны</h2>
       </div>
-    </nav>
-  </header>
 
-  <main class="main_container">
-    <h1 class="visually_hiden">Отзывы туристов Седоны</h1>
-
-    <section class="leave_review">
-      <div class="leave_review--wrapper">
-        <h2 class="leave a review__title">Оставьте свой отзыв</h2>
-        <p class="leave a review__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о
+      <section class="leave-review">
+        <h1 class="leave-review__title">Оставьте свой отзыв</h1>
+        <p class="leave-review__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о
           посещенных вами достопримечательностях</p>
-      </div>
-    </section>
+      </section>
 
-    <form class="review_form" action="https://echo.htmlacademy.ru/courses" method="post">
-      <div class="review_form--wrapper">
-        <!--нужна ли тут эта  обертка и если да, то одна на всю форму или на каждый  блок-->
-        <fieldset>
-          <legend>Представьтесь:</legend>
-          <input type="text" name="name" id="autor_name" value="Пётр">
-          <label for="autor_name">Имя*:</label>
-          <input type="text" name="surname" id="autor_surname" value="Пустота">
-          <label for="autor_surname">Фамилия*:</label>
-          <input type="text" name="patronymic" id="autor_patronymic" value="Викторович">
-          <label for="autor_patronymic">Отчество*:</label>
+      <form class="review-form" action="https://echo.htmlacademy.ru/courses" method="post">
+        <fieldset class="review-form__fieldset fieldset">
+          <legend class="fieldset-title">Представьтесь:</legend>
+          <ul class="fieldset__list">
+            <li class="fieldset__item">
+              <input class="fieldset__input" type="text" name="name" id="autor-name" value="Пётр">
+              <label class="fieldset__label" for="autor-name">Имя*:</label>
+            </li>
+            <li class="fieldset__item">
+              <input class="fieldset__input" type="text" name="surname" id="autor-surname" value="Пустота">
+              <label class="fieldset__label" for="autor-surname">Фамилия*:</label>
+            </li>
+            <li class="fieldset__item">
+              <input class="fieldset__input" type="text" name="patronymic" id="autor-patronymic" value="Викторович">
+              <label class="fieldset__label" for="autor-patronymic">Отчество*:</label>
+            </li>
+          </ul>
         </fieldset>
-        <fieldset>
-          <legend>Контактная информация:</legend>
-          <input type="text" name="tel" id="autor_tel" value="Введите телефон">
-          <label for="autor_tel">Контактный телефон*:</label>
-          <input type="text" name="mail" id="autor_mail" value="Введите e-mail">
-          <label for="autor_mail">Электронная почта*:</label>
+        <fieldset class="review-form__fieldset fieldset">
+          <legend class="fieldset-title">Контактная информация:</legend>
+          <ul class="fieldset__list">
+            <li class="fieldset__item">
+              <input class="fieldset__input" type="text" name="tel" id="autor-tel" value="Введите телефон">
+              <label class="fieldset__label" for="autor-tel">Контактный телефон*:</label>
+              <span class="visually-hiden">Телефон</span>
+            </li>
+            <li class="fieldset__item">
+              <input class="fieldset__input" type="text" name="mail" id="autor-mail" value="Введите e-mail">
+              <label class="fieldset__label" for="autor-mail">Электронная почта*:</label>
+              <span class="visually-hiden">Почта</span>
+            </li>
+          </ul>
         </fieldset>
-        <fieldset>
-          <legend>Ваше общее впечатление:</legend>
-          <input type="radio" id="review_good" checked>
-          <label for="review_good">Скорее положительное</label>
-          <input type="radio" id="review_negative">
-          <label for="review_negative">Скорее отрицательное</label>
-          <input type="radio" id="review_cant_say">
-          <label for="review_cant_say">Затрудняюсь ответить</label>
+        <fieldset class="review-form__fieldset fieldset">
+          <legend class="fieldset-title">Ваше общее впечатление:</legend>
+          <ul class="fieldset__list">
+            <li class="fieldset__item">
+              <label class="fieldset__label">
+                <input class="fieldset__input" type="radio" checked>
+                <span class="fieldset__text">Скорее положительное</span>
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="fieldset__label">
+                <input class="fieldset__radio" type="radio">
+                <span class="fieldset__text">Скорее отрицательное</span>
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="fieldset__label">
+                <input class="fieldset__radio" type="radio">
+                <span class="fieldset__text">Затрудняюсь ответить</span>
+              </label>
+            </li>
+          </ul>
         </fieldset>
-        <fieldset>
-          <legend>Посещенные достопримечательности:</legend>
-          <input type="checkbox" id="devil_bridge" checked>
-          <label for="devil_bridge">Мост Дьявола</label>
-          <input type="checkbox" id="mountain_bell" checked>
-          <label for="mountain_bell">Гора-Колокол</label>
-          <input type="checkbox" id="slide_park" checked>
-          <label for="slide_park">Слайд-парк</label>
-          <input type="checkbox" id="red_rocks">
-          <label for="red_rocks">Красные скалы</label>
+        <fieldset class="review-form__fieldset fieldset">
+          <legend class="fieldset-title">Посещенные достопримечательности:</legend>
+          <ul class="fieldset__list">
+            <li class="fieldset__item">
+              <label class="fieldset__label">
+                <input class="fieldset-checkbox" type="checkbox" checked>
+                <span class="fieldset__text">Мост Дьявола</span>
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="fieldset__label">
+                <input class="fieldset-checkbox" type="checkbox" checked>
+                <span class="fieldset__text">Гора-Колокол</span>
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="fieldset__label">
+                <input class="fieldset-checkbox" type="checkbox" checked>
+                <span class="fieldset__text">Слайд-парк</span>
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="fieldset__label">
+                <input class="fieldset-checkbox" type="checkbox">
+                <span class="fieldset__text">Красные скалы</span>
+              </label>
+            </li>
+          </ul>
         </fieldset>
-        <fieldset>
-          <legend>Опишите свои эмоции:</legend>
-          <textarea name="comment" id="autor_comment" rows="10">Опишите подробно все свои восторги </textarea>
-          <input type="submit" class="review_send" value="Отправить отзыв">
+        <fieldset class="review-form__fieldset fieldset">
+          <legend class="fieldset-title">Опишите свои эмоции:</legend>
+          <label class="fieldset__label">
+            <textarea class="fieldset__textarea" name="comment" id="autor-comment"
+              rows="10">Опишите подробно все свои восторги </textarea>
+          </label>
         </fieldset>
-        <p class="_form_footnote">* — обязательные поля</p>
-      </div>
-    </form>
+        <div class="send-form">
+          <button class="fieldset-button" type="submit">Отправить отзыв</button>
+          <p class="form-footnote">* — обязательные поля</p>
+        </div>
+      </form>
 
-  </main>
+    </main>
 
 
-  <footer class="main_footer">
-    <div class="main_footer__wrapper">
-      <div class="main_footer__hashtag hashtag">
-        <p class="hashtag__text">#visitsedona</p>
-        <!--на макете не ясно картинка это или текст и какой смысл под собой несет. просто декор или там ссылка должна быть-->
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <div class="main-footer__hashtag hashtag">
+          <p class="hashtag__text">#visitsedona</p>
+        </div>
+        <div class="main-footer__social social">
+          <b class="social__title visually-hidden">Ищите нас в соцсетях</b>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none">
+                  <path fill="#81B3D2" d="M0 0h48v48H0z" />
+                  <g clip-path="url(#a)">
+                    <path fill="#fff" fill-rule="evenodd"
+                      d="M35.5 18c.1-.6 0-1-.8-1H32c-.6 0-1 .3-1.1.7 0 0-1.3 3.2-3.2 5.3-.7.6-1 .8-1.3.8-.1 0-.4-.2-.4-.7v-5.2c0-.6-.2-.9-.7-.9h-4.1c-.5 0-.7.3-.7.6 0 .6 1 .8 1 2.5V24c0 .8-.1 1-.5 1-.9 0-3-3.2-4.3-6.9-.3-.7-.5-1-1.2-1H13c-.8 0-.9.3-.9.7 0 .7.9 4.1 4.1 8.6 2.2 3 5.3 4.7 8 4.7 1.7 0 2-.4 2-1v-2.3c0-.8 0-.9.6-.9.4 0 1 .2 2.6 1.7 1.8 1.7 2.1 2.5 3.1 2.5H35c.8 0 1.2-.4 1-1.1-.3-.7-1.1-1.8-2.3-3L32 25c-.4-.5-.3-.7 0-1.1 0 0 3.2-4.4 3.5-6Z"
+                      clip-rule="evenodd" />
+                  </g>
+                  <defs>
+                    <clipPath id="a">
+                      <path fill="#fff" d="M12 12h24v24H12z" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="visually-hiden">Мы в Вконтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="48" height="48" fill="#81B3D2" />
+                  <path
+                    d="M34.4393 16.6223L31.2705 31.566C31.0313 32.6205 30.408 32.883 29.5223 32.3865L24.6938 28.8285L22.3643 31.0695C22.1063 31.3275 21.891 31.5428 21.3938 31.5428L21.741 26.6258L30.6893 18.54C31.0785 18.1935 30.6045 18.0008 30.0848 18.348L19.0223 25.314L14.2598 23.823C13.224 23.4998 13.2053 22.7873 14.4758 22.29L33.1035 15.1133C33.966 14.79 34.7205 15.3053 34.4393 16.623V16.6223Z"
+                    fill="white" />
+                </svg>
+                <span class="visually-hiden">Мы в Телеграме</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="https://www.youtube.com/user/htmlacademyru">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none">
+                  <path fill="#81B3D2" d="M0 0h48v48H0z" />
+                  <path fill="#fff"
+                    d="M31.2 17H16.8a2.9 2.9 0 0 0-2.8 2.8v8.3c0 1.6 1.3 2.9 2.8 2.9h14.4c1.6 0 2.8-1.3 2.8-2.8v-8.4c0-1.5-1.2-2.8-2.8-2.8ZM21 27.4v-6.8L28 24 21 27.4Z" />
+                </svg>
+                <span class="visually-hiden">Мы в Ютубе</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><svg
+              xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="currentColor" role="img">
+              <path
+                d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" />
+            </svg>
+            <span class="visually-hiden">html academy</span>
+          </a>
+        </div>
       </div>
-      <div class="main_footer__social social">
-        <b class="social__title visually_hiden">Ищите нас в соцсетях</b>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none">
-                <path fill="#81B3D2" d="M0 0h48v48H0z" />
-                <g clip-path="url(#a)">
-                  <path fill="#fff" fill-rule="evenodd"
-                    d="M35.5 18c.1-.6 0-1-.8-1H32c-.6 0-1 .3-1.1.7 0 0-1.3 3.2-3.2 5.3-.7.6-1 .8-1.3.8-.1 0-.4-.2-.4-.7v-5.2c0-.6-.2-.9-.7-.9h-4.1c-.5 0-.7.3-.7.6 0 .6 1 .8 1 2.5V24c0 .8-.1 1-.5 1-.9 0-3-3.2-4.3-6.9-.3-.7-.5-1-1.2-1H13c-.8 0-.9.3-.9.7 0 .7.9 4.1 4.1 8.6 2.2 3 5.3 4.7 8 4.7 1.7 0 2-.4 2-1v-2.3c0-.8 0-.9.6-.9.4 0 1 .2 2.6 1.7 1.8 1.7 2.1 2.5 3.1 2.5H35c.8 0 1.2-.4 1-1.1-.3-.7-1.1-1.8-2.3-3L32 25c-.4-.5-.3-.7 0-1.1 0 0 3.2-4.4 3.5-6Z"
-                    clip-rule="evenodd" />
-                </g>
-                <defs>
-                  <clipPath id="a">
-                    <path fill="#fff" d="M12 12h24v24H12z" />
-                  </clipPath>
-                </defs>
-              </svg>
-              <span class="visually_hiden">Мы в Вконтакте</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="48" height="48" fill="#81B3D2" />
-                <path
-                  d="M34.4393 16.6223L31.2705 31.566C31.0313 32.6205 30.408 32.883 29.5223 32.3865L24.6938 28.8285L22.3643 31.0695C22.1063 31.3275 21.891 31.5428 21.3938 31.5428L21.741 26.6258L30.6893 18.54C31.0785 18.1935 30.6045 18.0008 30.0848 18.348L19.0223 25.314L14.2598 23.823C13.224 23.4998 13.2053 22.7873 14.4758 22.29L33.1035 15.1133C33.966 14.79 34.7205 15.3053 34.4393 16.623V16.6223Z"
-                  fill="white" />
-              </svg>
-              <span class="visually_hiden">Мы в Телеграме</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--telegram" href="https://www.youtube.com/user/htmlacademyru">
-              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none">
-                <path fill="#81B3D2" d="M0 0h48v48H0z" />
-                <path fill="#fff"
-                  d="M31.2 17H16.8a2.9 2.9 0 0 0-2.8 2.8v8.3c0 1.6 1.3 2.9 2.8 2.9h14.4c1.6 0 2.8-1.3 2.8-2.8v-8.4c0-1.5-1.2-2.8-2.8-2.8ZM21 27.4v-6.8L28 24 21 27.4Z" />
-              </svg>
-              <span class="visually_hiden">Мы в Ютубе</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="main_footer__copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><svg
-            xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="currentColor" role="img">
-            <path
-              d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" />
-          </svg>
-          <span class="visually_hidden">html academy</span>
-        </a>
+
+    </footer>
+
+
+    <div class="modal modal-wrong">
+      <div class="modal__wrapper">
+        <section class="modal__content">
+          <h2 class="modal-wrong__title">Что-то пошло не так!</h2>
+          <p class="modal-wrong__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <button class="accept" type="button">Ok</button>
+        </section>
       </div>
     </div>
 
-  </footer>
-
-<!--подумала что если по макету две модалки на разную ситуацию. то и верстаем две, а через jc уже будут навешиваться события когда какое открыть-->
-  <div class="modal_wrong">
-    <div class="modal_wrong__wrapper">
-      <section class="modal_wrong--content">
-        <h2 class="modal_wrong--title">Что-то пошло не так!</h2>
-        <p class="modal_wrong--text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="accept">Ok</button>
-      </section>
+    <div class="modal modal-correct">
+      <div class="modal__wrapper">
+        <section class="modal__content">
+          <h2 class="modal-correct__title">Ваш отзыв отправлен!</h2>
+          <p class="modal-correct__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
+            опубликуем его на сайте.</p>
+          <button class="close" type="button">Закрыть окно</button>
+        </section>
+      </div>
     </div>
   </div>
-
-  <div class="modal_correct">
-    <div class="modal_correct__wrapper">
-      <section class="modal_correc--content">
-        <h2 class="modal_correct--title">Ваш отзыв отправлен!</h2>
-        <p class="modal_correct--text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-        <button class="close">Закрыть окно</button>
-      </section>
-    </div>
-  </div>
-
 </body>
 
 </html>
