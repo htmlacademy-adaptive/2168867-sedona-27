@@ -1,0 +1,26 @@
+.page__body {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #e7e5e5;
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.page-container {
+  background-color: #ffffff;
+  margin: 0 auto;
+  min-width: 320px;
+  flex-grow: 1;
+}
+
+@media (min-width: 1200px) {
+  .page-container {
+    margin: 0 40px 0 40px;
+    box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+  }
+}
