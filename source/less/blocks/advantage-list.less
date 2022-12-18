@@ -1,0 +1,154 @@
+.advantage-list {
+  text-transform: uppercase;
+  text-align: center;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  min-height: 211px;
+
+
+  &--numbers {
+    background-color: #eeeeee;
+  }
+
+  &--photo {
+    background-color: #81b3d2;
+    color: #eeeeee;
+  }
+
+  &--icon {
+    text-align: left;
+    padding: 0 20px 46px 20px;
+  }
+}
+
+.advantage-list-wrapper {
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding-top: 105px;
+  }
+}
+
+.advantage-list__photo {
+  text-align: center;
+  display: flex;
+  min-width: 320px;
+  height: 256px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 520px;
+  }
+
+  @media (min-width: @tablet-width) {
+    min-width: 800px;
+  }
+}
+
+.advantage-list__photo img {
+  text-align: center;
+  vertical-align: middle;
+  display: flex;
+  height: 100%;
+
+
+  @media (min-width: @tablet-width) {
+    min-width: 100%;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .advantage-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-height: 256px;
+  }
+
+  .advantage-list__text {
+    min-width: 256px;
+    max-height: 256px;
+  }
+
+  .advantage-list--photo:nth-last-of-type(1) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .advantage-list--icon {
+    padding: 0;
+    min-height: 331px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantage-list__text {
+    min-width: 340px;
+    padding: 0 30px 0 30px;
+  }
+}
+
+
+.advantage-list__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  padding: 66px 18px 11px 18px;
+  .advantage-item ();
+
+  @media (min-width: @tablet-width) {
+    padding: 54px 36px 11px 36px;
+    min-width: 180px;
+    margin: 0;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 52px 90px 11px 82px;
+  }
+
+  &--icon {
+    margin: 0;
+    padding: 50px 0 10px 0;
+    display: block;
+
+    @media (min-width: @desktop-width) {
+      padding: 63px 90px 11px 86px;
+    }
+  }
+}
+
+.advantage-list__description {
+  padding: 19px 18px 40px 18px;
+  .description ();
+  .advantage-item ();
+
+  @media (min-width: @tablet-width) {
+    min-width: 190px;
+    padding: 25px 30px 56px 30px;
+  }
+
+  &--icon {
+    padding: 18px 18px 0 5px;
+
+    @media (min-width: @tablet-width) {
+      min-width: 154px;
+      padding: 12px 44px 0 44px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 12px 50px 41px 50px;
+    }
+  }
+
+  &--numbers {
+    padding: 18px 32px 28px 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 25px 50px 41px 50px;
+  }
+}

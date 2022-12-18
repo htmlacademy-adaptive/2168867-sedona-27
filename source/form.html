@@ -3,19 +3,20 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Форма отзыва</title>
-  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <div class="page-container">
-    <header class="main-header">
-      <a class="main-header__logo" href="index.html">
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html">
         <img src="./img/logo.svg" width="185" height="96" alt="Уютный городок Седона.">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
-          <span class="visually-hiden">Развернуть меню</span>
+          <span class="visually-hidden">Развернуть меню</span>
           <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2" />
             <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2" />
@@ -24,7 +25,7 @@
         </button>
 
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--current">
+          <li class="site-list__item">
             <a href="index.html">
               Главная</a>
           </li>
@@ -32,7 +33,7 @@
             <a href="catalog.html">
               Фото и видео</a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--current">
             <a href="#">Форма отзыва</a>
           </li>
           <li class="site-list__item">
@@ -44,7 +45,10 @@
 
     <main class="main">
       <div class="hero-photo">
-        <h2 class="visually-hiden">Фото гор Седоны</h2>
+        <h2 class="visually-hidden">Фото гор Седоны</h2>
+        <div class="sedova-main-photo">
+          <img src="./img/sedona.svg" alt="Добро пожаловать в Седону.">
+        </div>
       </div>
 
       <section class="leave-review">
@@ -146,7 +150,7 @@
           </label>
         </fieldset>
         <div class="send-form">
-          <button class="fieldset-button" type="submit">Отправить отзыв</button>
+          <button class="button--fieldset" type="submit">Отправить отзыв</button>
           <p class="form-footnote">* — обязательные поля</p>
         </div>
       </form>
@@ -223,7 +227,7 @@
         <section class="modal__content">
           <h2 class="modal-wrong__title">Что-то пошло не так!</h2>
           <p class="modal-wrong__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-          <button class="accept" type="button">Ok</button>
+          <button class="button--accept" type="button">Ok</button>
         </section>
       </div>
     </div>
@@ -234,7 +238,7 @@
           <h2 class="modal-correct__title">Ваш отзыв отправлен!</h2>
           <p class="modal-correct__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
             опубликуем его на сайте.</p>
-          <button class="close" type="button">Закрыть окно</button>
+          <button class="button--close" type="button">Закрыть окно</button>
         </section>
       </div>
     </div>
