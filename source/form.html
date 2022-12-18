@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Форма отзыва</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -24,7 +25,7 @@
         </button>
 
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--current">
+          <li class="site-list__item">
             <a href="index.html">
               Главная</a>
           </li>
@@ -32,7 +33,7 @@
             <a href="catalog.html">
               Фото и видео</a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--current">
             <a href="#">Форма отзыва</a>
           </li>
           <li class="site-list__item">
@@ -45,6 +46,9 @@
     <main class="main">
       <div class="hero-photo">
         <h2 class="visually-hidden">Фото гор Седоны</h2>
+        <div class="sedova-main-photo">
+          <img src="./img/sedona.svg" alt="Добро пожаловать в Седону.">
+        </div>
       </div>
 
       <section class="leave-review">
@@ -146,7 +150,7 @@
           </label>
         </fieldset>
         <div class="send-form">
-          <button class="button button-fieldset" type="submit">Отправить отзыв</button>
+          <button class="button--fieldset" type="submit">Отправить отзыв</button>
           <p class="form-footnote">* — обязательные поля</p>
         </div>
       </form>
@@ -223,7 +227,7 @@
         <section class="modal__content">
           <h2 class="modal-wrong__title">Что-то пошло не так!</h2>
           <p class="modal-wrong__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-          <button class="button button-accept" type="button">Ok</button>
+          <button class="button--accept" type="button">Ok</button>
         </section>
       </div>
     </div>
@@ -234,7 +238,7 @@
           <h2 class="modal-correct__title">Ваш отзыв отправлен!</h2>
           <p class="modal-correct__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
             опубликуем его на сайте.</p>
-          <button class="button button-close" type="button">Закрыть окно</button>
+          <button class="button--close" type="button">Закрыть окно</button>
         </section>
       </div>
     </div>

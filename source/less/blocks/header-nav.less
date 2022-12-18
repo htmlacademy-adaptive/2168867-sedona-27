@@ -1,0 +1,33 @@
+.header-nav {
+  width: 100%;
+  min-height: 56px;
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+}
+
+.header-nav__wrapper {
+  width: 100%;
+}
+
+.header-nav__list {
+  min-width: 320px;
+  max-height: 56px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav__toggle {
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
