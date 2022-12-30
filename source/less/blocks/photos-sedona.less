@@ -1,0 +1,130 @@
+.photos-sedona {
+  margin: 0;
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 60px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
+}
+
+.object-card {
+  margin-top: 0;
+  padding-bottom: 50px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 324px;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 400px;
+    height: 267px;
+  }
+}
+
+.object-card--stretch {
+  @media (min-width: @desktop-width) {
+    height: 400px;
+  }
+}
+
+.object-card__wrapper--stretch {
+  @media (min-width: @tablet-width) {
+    min-width: 648px;
+    min-height: 400px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 1200px;
+  }
+}
+
+.object-card__wrapper {
+  height: 267px;
+}
+
+.object-card__wrapper img {
+  @media (min-width: @tablet-width) {
+    min-width: 100%;
+    height: 100%;
+  }
+}
+
+.object-card:nth-last-of-type(1) {
+  padding-bottom: 5px;
+}
+
+
+.object-card__about {
+  display: block;
+  margin: 0;
+  padding: 20px 0 0 0;
+
+
+  @media (min-width: @tablet-width) {
+    background-color: #f2f2f2;
+    padding: 18px 20px 5px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: transparent;
+    color: #ffffff;
+    display: flex;
+    position: relative;
+    top: -85px;
+    left: 5px;
+  }
+}
+
+.object-card__title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 5px;
+}
+
+.object-card__text {
+  .description ();
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.object-card__likes {
+  color: #000000;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    top: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: transparent;
+    color: #ffffff;
+  }
+}
+
+.object-card__likes svg {
+  margin-right: 10px;
+  fill-opacity: 0.3;
+
+  @media (min-width: @desktop-width) {
+    fill: #ffffff;
+    fill-opacity: 1;
+  }
+}

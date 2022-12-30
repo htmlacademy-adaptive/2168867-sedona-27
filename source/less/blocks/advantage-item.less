@@ -9,19 +9,32 @@
 
   &--icon {
     display: flex;
+    flex-direction: row;
 
     @media (min-width: @tablet-width) {
+      text-align: center;
       display: flex;
       flex-direction: column;
-      text-align: center;
     }
   }
 }
 
+.advantage-item-wrapper {
+  padding-top: 32px;
+  padding-left: 5px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding-top: 155px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 105px;
+  }
+}
+
 .advantage-item__title {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 26px;
+  .title ();
   padding: 66px 18px 11px 18px;
   .advantage-item ();
 
@@ -40,7 +53,7 @@
 
   &--icon {
     margin: 0;
-    padding: 50px 0 10px 0;
+    padding: 0;
     display: block;
 
     @media (min-width: @desktop-width) {
@@ -50,9 +63,7 @@
 
   &--photo {
     padding: 34px 18px 11px 18px;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 26px;
+    .title ();
 
     @media (min-width: @tablet-width) {
       min-width: 100px;
@@ -95,11 +106,20 @@
   }
 
   &--icon {
-    padding: 18px 18px 0 5px;
+    padding: 16px 18px 0 0;
+
+    span {
+      display: contents;
+    }
 
     @media (min-width: @tablet-width) {
       min-width: 154px;
-      padding: 12px 44px 0 44px;
+      padding: 25px 44px 0 44px;
+
+      span::after {
+        content: "\A";
+        white-space: normal;
+      }
     }
 
     @media (min-width: @desktop-width) {
@@ -108,11 +128,24 @@
   }
 
   &--numbers {
-    padding: 18px 32px 28px 32px;
-  }
+    padding: 16px 32px 0 32px;
 
-  @media (min-width: @desktop-width) {
-    padding: 25px 50px 41px 50px;
+    span {
+      display: contents;
+    }
+
+    @media (min-width: @tablet-width) {
+      padding: 20px 32px 28px 32px;
+
+      span::after {
+        content: "\A";
+        white-space: normal;
+      }
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 25px 50px 41px 50px;
+    }
   }
 }
 
@@ -146,4 +179,3 @@
     left: 90px;
   }
 }
-
