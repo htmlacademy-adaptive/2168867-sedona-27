@@ -1,11 +1,57 @@
-.hero-photo {
-  background: url("../img/back.jpg") no-repeat center;
-  background-size: cover;
-  min-height: 214px;
+.hero-photo-catalog {
+  background: url("../img/catalog/back-catalog.jpg") no-repeat center;
   width: 100%;
+  min-height: 158px;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    min-height: 290px;
+    background: url("../img/back-tablet.jpg") no-repeat bottom;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 300px;
+  }
 }
 
-@media (min-width: @tablet-width) {
-  min-height: 518px;
+.hero-photo-catalog::after {
+  content: url("../img/back-decor.svg");
+  height: 57px;
+  width: 100%;
+  position: absolute;
+  top: 158px;
+
+  @media (min-width: @tablet-width) {
+    content: url("../img/back-tablet-decor.svg");
+    top: 290px;
+  }
+
+  @media (min-width: @desktop-width) {
+    content: url("../img/back-desktop-decor.svg");
+    top: 300px;
+  }
+}
+
+.sedova-photo {
+  display: block;
+  text-align: center;
+  padding-top: 51px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 94px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 100px;
+  }
+}
+
+.sedova-photo img {
+  @media (min-width: @tablet-width) {
+    width: 457px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 460px;
+  }
 }
