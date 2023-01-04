@@ -1,9 +1,114 @@
+.modal {
+  background-color: #ffffff;
+  box-sizing: border-box;
+  margin: auto;
+  width: 320px;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  position: fixed;
+  display: none;
+}
+
+.modal__wrapper {
+  position: fixed;
+  display: flex;
+  background-color: #ffffff;
+  left: 0;
+
+  &--correct {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @media (min-width: @tablet-width) {
+      width: 640px;
+      height: 347px;
+      box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+    }
+  }
+
+  &--wrong {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @media (min-width: @tablet-width) {
+      width: 400px;
+      height: 347px;
+      box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+    }
+  }
+}
+
+.modal__content {
+  text-transform: uppercase;
+  min-width: 237px;
+  margin: 0;
+  padding: 45px 42px 28px 42px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 22px 40px 30px 36px;
+  }
+
+  &--correct {
+    padding: 0;
+
+    @media (min-width: @tablet-width) {
+      padding: 20px 90px 28px 90px;
+      min-width: 458px;
+    }
+  }
+}
+
+.modal__title {
+  .title ();
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+    margin: 23px 0 23px 0;
+
+    span::after {
+      content: "\A";
+      white-space: pre;
+    }
+  }
+}
+
+.modal__text {
+  .description ();
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding: 0 0 25px 0;
+  }
+
+  &--correct {
+    .description ();
+    margin: 0;
+    padding: 0 39px 0 37px;
+
+    @media (min-width: @tablet-width) {
+      padding: 0 12px 74px 12px;
+
+      span::after {
+        content: "\A";
+        white-space: pre;
+      }
+    }
+  }
+}
+
 .button--accept {
   .button ();
   .title ();
   width: 180px;
   height: 58px;
+  margin: 20px;
 
+  @media (min-width: @tablet-width) {
+    min-width: 270px;
+  }
 }
 
 .button--close {
@@ -11,5 +116,11 @@
   .title ();
   width: 280px;
   height: 58px;
+  margin: 20px;
 
+  @media (min-width: @tablet-width) {
+    min-width: 458px;
+    margin: 20px 0 0 0;
+    padding: 7px 0 0 0;
+  }
 }

@@ -6,6 +6,81 @@
     border: none;
     padding: 0 20px 0 20px;
   }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 60px 0 60px;
+  }
+
+  .review-form__fieldset:nth-of-type(1) {
+    @media (min-width: @tablet-width) {
+      max-width: 287px;
+      padding: 0 20px 23px 0;
+      margin: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      max-width: 430px;
+      padding: 0 60px 32px 60px;
+    }
+  }
+
+  .review-form__fieldset:nth-of-type(2) {
+    @media (min-width: @tablet-width) {
+      max-width: 286px;
+      padding: 0 0 0 60px;
+      margin: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      max-width: 344px;
+      padding: 0 40px 0 60px;
+    }
+  }
+
+  .review-form__fieldset:nth-of-type(3) {
+    @media (min-width: @tablet-width) {
+      min-width: 574px;
+      padding: 0 30px 20px 30px;
+      margin: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      min-width: 960px;
+      padding: 0 60px 60px 60px;
+    }
+  }
+
+  .review-form__fieldset:nth-of-type(4) {
+    @media (min-width: @tablet-width) {
+      min-width: 480px;
+      padding: 0 84px 14px 84px;
+      margin: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      min-width: 960px;
+      padding: 0 60px 92px 60px;
+    }
+  }
+
+  .review-form__fieldset:nth-of-type(5) {
+    @media (min-width: @tablet-width) {
+      min-width: 568px;
+      margin: 0;
+      padding: 0;
+    }
+
+
+    @media (min-width: @desktop-width) {
+      padding: 0 156px 0 156px;
+    }
+  }
+
+  .fieldset__title:nth-child(1) {
+    padding: 0 0 25px 35px;
+  }
 }
 
 .fieldset__title {
@@ -14,8 +89,20 @@
   text-align: center;
   padding: 28px 0 15px 0;
 
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    padding: 0 0 25px 0;
+  }
+
   &--choice {
     padding: 20px 0 15px 0;
+
+    @media (min-width: @tablet-width) {
+      span::after {
+        content: "\A";
+        white-space: pre;
+      }
+    }
   }
 
   &--text {
@@ -33,6 +120,12 @@
     padding: 0 0 14px 0;
     position: relative;
     top: 75px;
+
+    @media (min-width: @tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
   }
 }
 
@@ -40,8 +133,16 @@
   margin: 0;
   padding: 0 0 10px 0;
 
+  @media (min-width: @desktop-width) {
+    padding: 0 10px 10px 0;
+  }
+
   &--choice {
     padding: 0 0 35px 0;
+
+    @media (min-width: @desktop-width) {
+      padding: 0 10px 35px 0;
+    }
   }
 }
 
@@ -54,6 +155,21 @@
   margin: 0;
   min-width: 260px;
   font-family: "PT Sans", "Arial", sans-serif;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 414px;
+  }
+
+  &--contact {
+    @media (min-width: @tablet-width) {
+      min-width: 330px;
+      padding: 0 0 0 20px;
+    }
+  }
 }
 
 .fieldset__label {
@@ -63,9 +179,19 @@
   left: 15px;
   .description ();
 
+  @media (min-width: @tablet-width) {
+    top: -85px;
+    left: 15px;
+  }
+
   &--choice {
     top: -62px;
     left: 0;
+
+    @media (min-width: @desktop-width) {
+      top: -45px;
+      left: 25px;
+    }
   }
 
   &--text {
@@ -78,7 +204,7 @@
 .fieldset__text {
   .title ();
   text-transform: none;
-  margin: 0 0 0 60px;
+  margin: 0 46px 0 66px;
 }
 
 .fieldset__textarea {
@@ -92,6 +218,16 @@
   padding: 18px 16px;
   font-family: "PT Sans", "Arial", sans-serif;
   .title ();
+
+  @media (min-width: @tablet-width) {
+    min-width: 588px;
+    padding: 18px 40px 20px 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 708px;
+    padding: 18px 40px 20px 18px;
+  }
 }
 
 .fieldset-radio,
@@ -120,7 +256,7 @@
   width: 16px;
   height: 16px;
   top: 0;
-  left: 15px;
+  left: 20px;
   bottom: 3px;
 }
 
@@ -144,11 +280,32 @@
   .title ();
   width: 280px;
   height: 58px;
+  padding: 10px 40px 10px 40px;
+
+  @media (min-width: @tablet-width) {
+    width: 324px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 384px;
+  }
 }
 
 .send-form {
   margin: 0;
   padding: 45px 20px 0 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 43px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    min-width: 648px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 43px 0 60px 156px;
+    min-width: 768px;
+  }
 }
 
 .form-footnote {
@@ -158,4 +315,11 @@
   line-height: 21px;
   text-transform: uppercase;
   margin: 0 0 0 142px;
+
+  @media (min-width: @tablet-width) {
+    .description ();
+    display: block;
+    position: relative;
+    top: 22px;
+  }
 }

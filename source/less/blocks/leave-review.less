@@ -4,20 +4,29 @@
   margin: 0;
   min-width: 284px;
   padding: 22px 18px 8px 18px;
+
+  @media (min-width: @tablet-width) {
+    padding: 22px 18px 78px 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 22px 18px 22px 18px;
+  }
 }
 
 .leave-review__title {
   padding: 0 12px 0 12px;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     font-size: 30px;
     font-weight: 700;
     line-height: 28px;
-    padding: 18px 12px 0 14px;
+    padding: 38px 12px 15px 14px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 52px 12px 0 12px;
+    padding: 92px 12px 0 12px;
   }
 }
 
@@ -32,9 +41,14 @@
     margin: 0;
     padding: 8px 135px 30px 135px;
     min-width: 458px;
+
+    span::after {
+      content: "\A";
+      white-space: pre;
+    }
   }
 
   @media (min-width: @desktop-width) {
-    padding: 8px 16px 48px 14px;
+    padding: 28px 16px 48px 14px;
   }
 }
