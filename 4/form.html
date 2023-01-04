@@ -56,7 +56,7 @@
 
       <section class="leave-review">
         <h1 class="leave-review__title">Оставьте свой отзыв</h1>
-        <p class="leave-review__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о
+        <p class="leave-review__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них,<span></span> а также о
           посещенных вами достопримечательностях</p>
       </section>
 
@@ -117,7 +117,7 @@
           </ul>
         </fieldset>
         <fieldset class="review-form__fieldset fieldset">
-          <legend class="fieldset__title fieldset__title--choice">Посещенные достопримечательности:</legend>
+          <legend class="fieldset__title fieldset__title--choice">Посещенные<span></span> достопримечательности:</legend>
           <ul class="fieldset__list fieldset__list--choice">
             <li class="fieldset__item fieldset__item--choice">
               <label class="fieldset__label fieldset__label--choice">
@@ -161,12 +161,12 @@
     </main>
 
 
-    <footer class="main-footer">
-      <div class="main-footer__wrapper">
-        <div class="main-footer__hashtag hashtag">
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__hashtag hashtag">
           <p class="hashtag__text">#visitsedona</p>
         </div>
-        <div class="main-footer__social social">
+        <div class="page-footer__social social">
           <b class="social__title visually-hidden">Ищите нас в соцсетях</b>
           <ul class="social__list">
             <li class="social__item">
@@ -210,9 +210,9 @@
             </li>
           </ul>
         </div>
-        <div class="main-footer__copyright copyright">
-          <b class="copyright__text">Разработано</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><svg
+        <div class="page-footer__copyright page-copyright">
+          <b class="page-copyright__text">Разработано</b>
+          <a class="page-copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><svg
               xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="currentColor" role="img">
               <path
                 d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" />
@@ -226,22 +226,22 @@
 
 
     <div class="modal modal-wrong">
-      <div class="modal__wrapper">
+      <div class="modal__wrapper modal__wrapper--wrong">
         <section class="modal__content">
-          <h2 class="modal-wrong__title">Что-то пошло не так!</h2>
-          <p class="modal-wrong__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-          <button class="button--accept" type="button">Ok</button>
+          <h2 class="modal__title">Что-то пошло<span></span> не так!</h2>
+          <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <button class="button button--accept" type="button">Ok</button>
         </section>
       </div>
     </div>
 
     <div class="modal modal-correct">
-      <div class="modal__wrapper">
-        <section class="modal__content">
-          <h2 class="modal-correct__title">Ваш отзыв отправлен!</h2>
-          <p class="modal-correct__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
+      <div class="modal__wrapper modal__wrapper--correct">
+        <section class="modal__content modal__content--correct">
+          <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+          <p class="modal__text modal__text--correct">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<span></span>  В ближайшее время мы
             опубликуем его на сайте.</p>
-          <button class="button--close" type="button">Закрыть окно</button>
+          <button class="button button--close" type="button">Закрыть окно</button>
         </section>
       </div>
     </div>
