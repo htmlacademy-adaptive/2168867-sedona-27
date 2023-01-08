@@ -12,7 +12,9 @@
   <div class="page-container">
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img src="./img/logo.svg" width="185" height="96" alt="Уютный городок Седона.">
+        <svg class="page-header__icon" width="185" height="96">
+          <use xlink:href="img/sprite.svg#logo-icon"></use>
+        </svg>
       </a>
       <nav class="header-nav header-nav--closed header-nav--nojs">
         <button class="header-nav__toggle" type="button">
@@ -44,8 +46,10 @@
 
       <div class="hero-photo-catalog">
         <h2 class="visually-hidden">Фото гор Седоны</h2>
-        <div class="sedova-photo">
-          <img src="./img/sedona.svg" alt="Добро пожаловать в Седону.">
+        <div class="sedona-photo">
+          <svg width="282" height="214">
+            <use xlink:href="img/sprite.svg#sedona-icon"></use>
+          </svg>
         </div>
       </div>
       <section class="hero-catalog">
@@ -69,7 +73,7 @@
               <source media="(min-width: 768px)"
                 srcset="./img/catalog/sedona-space-tablet.jpg 1x, ./img/catalog/sedona-space-tablet@2x.jpg 2x">
               <img src="./img/catalog/sedona-space.jpg" srcset="./img/catalog/sedona-space@2x.jpg 2x"
-                alt="Просторы Седоны." width="280" height="280" srcset="./img/index/central-square@2x.jpg 2x">
+                alt="Просторы Седоны." width="280" height="280">
             </picture>
           </div>
           <div class="object-card__about">
@@ -78,9 +82,8 @@
               <p class="object-card__text">Автор фото: Борис</p>
             </div>
             <a class="object-card__likes" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="currentColor" role="img">
-                <path fill="currentColor"
-                  d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z" />
+              <svg class="object-card__icon" width="23" height="21">
+                <use xlink:href="img/sprite.svg#likes"></use>
               </svg>
               <span class="object-card__count">1350</span>
             </a>
@@ -95,7 +98,7 @@
               <source media="(min-width: 768px)"
                 srcset="./img/catalog/sedona-flora-tablet.jpg 1x, ./img/catalog/sedona-flora@2x.jpg 2x">
               <img src="./img/catalog/sedona-flora.jpg" srcset="./img/catalog/sedona-flora@2x.jpg 2x"
-                alt="Необычная местная фауна." width="280" height="280" srcset="./img/catalog/sedona-flora@2x.jpg 2x">
+                alt="Необычная местная фауна." width="280" height="280">
             </picture>
           </div>
           <div class="object-card__about">
@@ -104,9 +107,8 @@
               <p class="object-card__text">Автор фото: Сергей</p>
             </div>
             <a class="object-card__likes" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="currentColor">
-                <path fill="currentColor"
-                  d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z" />
+              <svg class="object-card__icon" width="23" height="21">
+                <use xlink:href="img/sprite.svg#likes"></use>
               </svg>
               <span class="object-card__count">143</span>
             </a>
@@ -115,12 +117,13 @@
 
         <section class="object-card">
           <div class="object-card__wrapper">
-            <source media="(min-width: 1200px)"
-              srcset="./img/catalog/sedona-road-desktop.jpg 1x, ./img/catalog/sedona-road@2x.jpg 2x">
-            <source media="(min-width: 768px)"
-              srcset="./img/catalog/sedona-road-tablet.jpg 1x, ./img/catalog/sedona-road@2x.jpg 2x">
-            <img src="./img/catalog/sedona-road.jpg" srcset="./img/catalog/sedona-road@2x.jpg 2x"
-              alt="Дорога на север Седоны." width="280" height="280" srcset="./img/catalog/sedona-road@2x.jpg 2x">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="./img/catalog/sedona-road-desktop.jpg 1x, ./img/catalog/sedona-road@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="./img/catalog/sedona-road-tablet.jpg 1x, ./img/catalog/sedona-road@2x.jpg 2x">
+              <img src="./img/catalog/sedona-road.jpg" srcset="./img/catalog/sedona-road@2x.jpg 2x"
+                alt="Дорога на север Седоны." width="280" height="280">
             </picture>
           </div>
           <div class="object-card__about">
@@ -129,9 +132,8 @@
               <p class="object-card__text">Автор фото: Петр</p>
             </div>
             <a class="object-card__likes" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none">
-                <path fill="currentColor"
-                  d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z" />
+              <svg class="object-card__icon" width="23" height="21">
+                <use xlink:href="img/sprite.svg#likes"></use>
               </svg>
               <span class="object-card__count">96</span>
             </a>
@@ -146,7 +148,7 @@
               <source media="(min-width: 768px)"
                 srcset="./img/catalog/devil-bridge-tablet.jpg 1x, ./img/catalog/devil-bridge-tablet@2x.jpg 2x">
               <img src="./img/catalog/devil-bridge.jpg" srcset="./img/catalog/devil-bridge@2x.jpg 2x"
-                alt="Мост дьявола в Седоне." width="280" height="280" srcset="./img/catalog/devil-bridge@2x.jpg 2x">
+                alt="Мост дьявола в Седоне." width="280" height="280">
             </picture>
           </div>
           <div class="object-card__about">
@@ -155,9 +157,8 @@
               <p class="object-card__text">Автор фото: Антон</p>
             </div>
             <a class="object-card__likes" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none">
-                <path fill="currentColor"
-                  d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z" />
+              <svg class="object-card__icon" width="23" height="21">
+                <use xlink:href="img/sprite.svg#likes"></use>
               </svg>
               <span class="object-card__count">254</span>
             </a>
@@ -172,18 +173,23 @@
             подорожали в очередной раз!</p>
           <div class="player-poster">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="./img/catalog/presentation-desktop.webp 1x, ./img/catalog/presentation@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="./img/catalog/presentation-tablet.webp 1x, ./img/catalog/presentation@2x.webp 2x">
+              <source type="image/webp"
+                srcset="./img/catalog/presentation.webp 1x, ./imgcatalog/presentation@2x.webp 2x">
               <source media="(min-width: 1200px)"
                 srcset="./img/catalog/presentation-desktop.jpg 1x, ./img/catalog/presentation-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
                 srcset="./img/catalog/presentation-tablet.jpg 1x, ./img/catalog/presentation-tablet@2x.jpg 2x">
               <img src="./img/catalog/presentation.jpg" srcset="./img/catalog/presentation@2x.jpg 2x"
-                alt="Презентация городка Седона." width="280" height="177"
-                srcset="./img/catalog/presentation@2x.jpg 2x">
+                alt="Презентация городка Седона." width="280" height="177">
             </picture>
             <button class="button player-button">
               <span class="visually-hidden">Cтарт</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="54" fill="none">
-                <path fill="#fff" fill-opacity=".7" d="M48 27 0 54V0l48 27Z" />
+              <svg class="button__icon" width="48" height="54">
+                <use xlink:href="img/sprite.svg#start-button"></use>
               </svg>
             </button>
           </div>
@@ -201,39 +207,24 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none">
-                  <path fill="#81B3D2" d="M0 0h48v48H0z" />
-                  <g clip-path="url(#a)">
-                    <path fill="#fff" fill-rule="evenodd"
-                      d="M35.5 18c.1-.6 0-1-.8-1H32c-.6 0-1 .3-1.1.7 0 0-1.3 3.2-3.2 5.3-.7.6-1 .8-1.3.8-.1 0-.4-.2-.4-.7v-5.2c0-.6-.2-.9-.7-.9h-4.1c-.5 0-.7.3-.7.6 0 .6 1 .8 1 2.5V24c0 .8-.1 1-.5 1-.9 0-3-3.2-4.3-6.9-.3-.7-.5-1-1.2-1H13c-.8 0-.9.3-.9.7 0 .7.9 4.1 4.1 8.6 2.2 3 5.3 4.7 8 4.7 1.7 0 2-.4 2-1v-2.3c0-.8 0-.9.6-.9.4 0 1 .2 2.6 1.7 1.8 1.7 2.1 2.5 3.1 2.5H35c.8 0 1.2-.4 1-1.1-.3-.7-1.1-1.8-2.3-3L32 25c-.4-.5-.3-.7 0-1.1 0 0 3.2-4.4 3.5-6Z"
-                      clip-rule="evenodd" />
-                  </g>
-                  <defs>
-                    <clipPath id="a">
-                      <path fill="#fff" d="M12 12h24v24H12z" />
-                    </clipPath>
-                  </defs>
+                <svg class="social__link__icon" width="48" height="48">
+                  <use xlink:href="img/sprite.svg#vk-icon"></use>
                 </svg>
                 <span class="visually-hidden">Мы в Вконтакте</span>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="48" height="48" fill="#81B3D2" />
-                  <path
-                    d="M34.4393 16.6223L31.2705 31.566C31.0313 32.6205 30.408 32.883 29.5223 32.3865L24.6938 28.8285L22.3643 31.0695C22.1063 31.3275 21.891 31.5428 21.3938 31.5428L21.741 26.6258L30.6893 18.54C31.0785 18.1935 30.6045 18.0008 30.0848 18.348L19.0223 25.314L14.2598 23.823C13.224 23.4998 13.2053 22.7873 14.4758 22.29L33.1035 15.1133C33.966 14.79 34.7205 15.3053 34.4393 16.623V16.6223Z"
-                    fill="white" />
+                <svg class="social__link__icon" width="48" height="48">
+                  <use xlink:href="img/sprite.svg#tg-icon"></use>
                 </svg>
                 <span class="visually-hidden">Мы в Телеграме</span>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--telegram" href="https://www.youtube.com/user/htmlacademyru">
-                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none">
-                  <path fill="#81B3D2" d="M0 0h48v48H0z" />
-                  <path fill="#fff"
-                    d="M31.2 17H16.8a2.9 2.9 0 0 0-2.8 2.8v8.3c0 1.6 1.3 2.9 2.8 2.9h14.4c1.6 0 2.8-1.3 2.8-2.8v-8.4c0-1.5-1.2-2.8-2.8-2.8ZM21 27.4v-6.8L28 24 21 27.4Z" />
+                <svg class="social__link__icon" width="48" height="48">
+                  <use xlink:href="img/sprite.svg#youtube-icon"></use>
                 </svg>
                 <span class="visually-hidden">Мы в Ютубе</span>
               </a>
@@ -242,10 +233,9 @@
         </div>
         <div class="page-footer__copyright page-copyright">
           <b class="page-copyright__text">Разработано</b>
-          <a class="page-copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><svg
-              xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="currentColor" role="img">
-              <path
-                d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" />
+          <a class="page-copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="copyright__icon" width="27" height="35">
+              <use xlink:href="img/sprite.svg#html-academy-icon"></use>
             </svg>
             <span class="visually-hidden">html academy</span>
           </a>

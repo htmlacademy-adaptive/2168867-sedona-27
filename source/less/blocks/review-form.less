@@ -77,10 +77,10 @@
       padding: 0 156px 0 156px;
     }
   }
+}
 
-  .fieldset__title:nth-child(1) {
-    padding: 0 0 25px 35px;
-  }
+.fieldset__title:nth-child(1) {
+  padding: 0 0 25px 35px;
 }
 
 .fieldset__title {
@@ -168,8 +168,37 @@
     @media (min-width: @desktop-width) {
       min-width: 330px;
       padding: 0 0 0 20px;
+      color: rgba(0, 0, 0, 0.3);
     }
   }
+
+  &--tel,
+  &--mail {
+    .description ();
+    text-transform: uppercase;
+    top: -85px;
+    left: 15px;
+  }
+}
+
+.fieldset__label--tel::before,
+.fieldset__label--mail::before {
+  @media (min-width: @desktop-width) {
+    height: 58px;
+    width: 58px;
+    position: relative;
+    left: 330px;
+    top: 26px;
+  }
+}
+
+.fieldset__label--tel::before {
+  content: url("../img/form/tel.svg");
+}
+
+
+.fieldset__label--mail::before {
+  content: url("../img/form/mail.svg");
 }
 
 .fieldset__label {
