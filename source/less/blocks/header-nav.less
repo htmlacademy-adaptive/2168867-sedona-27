@@ -1,12 +1,12 @@
 .header-nav {
-  width: 100%;
-  min-height: 56px;
-  display: none;
+  width: auto;
+  min-height: 55px;
 
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+    background-color: #ffffff;
   }
 }
 
@@ -14,17 +14,112 @@
   width: 100%;
 }
 
+.header-nav--closed .header-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 0;
+  height: 2px;
+  width: 23px;
+  background-color: #81b3d2;
+  box-shadow: 0 5px 0 0 #81b3d2, 0 10px 0 0 #81b3d2;
+}
+
+.header-nav--opened .header-nav__toggle {
+  top: 0;
+  left: auto;
+  right: 40px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 26px;
+    left: 18px;
+    width: 26px;
+    height: 3px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade(#ffffff, 30%);
+  }
+}
+
+
+@media (max-width: @mobile-width-only) {
+  .header-nav--closed .site-list__item {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+
+  .header-nav--opened .header-nav__wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    min-height: 23vh;
+    background-color: #81b3d2;
+  }
+
+  .header-nav--opened .header-nav__wrapper::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 7px;
+    box-shadow: inset 2px 0 7px -2px fade(#000000, 20%);
+  }
+
+  .header-nav--nojs .header-nav__toggle {
+    display: none;
+  }
+
+  .header-nav--nojs .header-nav__wrapper {
+    position: static;
+    min-height: 0;
+  }
+
+  .header-nav--nojs .site-list__item {
+    display: block;
+  }
+
+  .header-nav--nojs .site-list__item--active a {
+    text-align: center;
+  }
+}
+
 .header-nav__list {
-  min-width: 320px;
-  max-height: 56px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .header-nav__toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  z-index: 12;
+  width: 23px;
+  height: 22px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
   display: block;
 
   @media (min-width: @tablet-width) {
