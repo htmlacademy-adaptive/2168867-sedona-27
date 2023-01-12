@@ -52,14 +52,13 @@
   }
 }
 
-
 .button--booking-form {
+  .button();
+  .title ();
+  font-size: 21px;
   margin: 0 18px 49px 18px;
   padding: 16px 49px 16px 49px;
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 26px;
-  .button ();
+
 
   @media (min-width: @tablet-width) {
     min-width: 360px;
@@ -68,5 +67,15 @@
 
   @media (min-width: @desktop-width) {
     margin: 15px 370px 49px 370px;
+    font-size: 26px;
   }
+}
+
+.button--booking-form:hover {
+  background-color: #669ec0;
+}
+
+.button--booking-form:active {
+  background-color: #669ec0;
+  color: rgba(255, 255, 255, 0.3);
 }

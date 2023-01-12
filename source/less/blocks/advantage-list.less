@@ -12,12 +12,15 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    max-height: 256px;
+    min-height: 256px;
   }
 
   &--numbers {
     background-color: #eeeeee;
-    padding-bottom: 45px;
+
+    @media (min-width: @tablet-width) {
+      padding-bottom: 0;
+    }
   }
 
   &--photo {
@@ -46,11 +49,12 @@
 .advantage-list__photo {
   text-align: center;
   min-width: 320px;
-  height: 260px;
+  height: 100%;
+  margin: 0 auto;
+  object-fit: contain;
 
   @media (min-width: @tablet-width) {
     min-width: 520px;
-    height: 256px;
   }
 
   @media (min-width: @desktop-width) {
@@ -61,7 +65,7 @@
 .advantage-list__text {
   @media (min-width: @tablet-width) {
     min-width: 256px;
-    max-height: 256px;
+    min-height: 256px;
   }
 
   @media (min-width: @desktop-width) {
@@ -71,21 +75,21 @@
 }
 
 .advantage-list__photo img {
-  text-align: center;
   display: block;
-  height: 260px;
+  height: 100%;
   min-width: 100%;
 
   @media (min-width: @tablet-width) {
-    height: 256px;
+    height: 100%;
+    object-fit: cover;
   }
 }
 
-.advantage-list--photo:nth-last-of-type(1) {
+.advantage-list--photo:nth-of-type(2) {
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row-reverse;
-    height: 256px;
+    min-height: 100%;
   }
 }
 
@@ -119,10 +123,10 @@
 
   &--photo {
     min-width: 140px;
-    padding: 50px 52px 11px 54px;
+    padding: 40px 52px 11px 54px;
 
     @media (min-width: @desktop-width) {
-      padding: 52px 96px 11px 94px;
+      padding: 45px 96px 11px 94px;
     }
   }
 }
@@ -143,6 +147,11 @@
   .advantage-item ();
 
   @media (min-width: @tablet-width) {
+    min-width: 190px;
+    padding: 25px 30px 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
     min-width: 190px;
     padding: 25px 30px 56px 30px;
   }
