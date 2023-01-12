@@ -1,0 +1,70 @@
+.sedona-photo {
+  display: block;
+  text-align: center;
+  padding-top: 50px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-height: 350px;
+  }
+
+  &--main {
+    padding: 86px 19px 0 19px;
+
+    @media (min-width: @tablet-width) {
+      padding: 80px 154px 0 154px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 80px 370px 0 370px;
+    }
+  }
+
+  &--form {
+    padding-top: 50px;
+  }
+}
+
+.sedona-photo svg {
+  @media (min-width: @tablet-width) {
+    width: 457px;
+
+    &--main {
+      width: 461px;
+      object-fit: contain;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 460px;
+    height: 250px;
+  }
+}
+
+.sedona-photo--main svg {
+  @media (min-width: @tablet-width) {
+    width: 461px;
+    height: 350px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 460px;
+  }
+}
+
+.sedona-photo--form svg {
+  width: 230px;
+  height: 40px;
+
+  @media (min-width: @tablet-width) {
+    width: 461px;
+    height: 150px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 460px;
+  }
+}

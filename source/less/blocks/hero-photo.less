@@ -1,18 +1,24 @@
 .hero-photo-catalog {
   background: url("../img/catalog/back-catalog.jpg") no-repeat center;
   width: 100%;
-  min-height: 158px;
+  height: 158px;
   margin: 0;
 
   @media (min-width: @tablet-width) {
-    min-height: 290px;
+    height: 290px;
     background: url("../img/back-tablet.jpg") no-repeat bottom;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog/back-catalog@2x.jpg");
+      background-size: cover;
+    }
   }
 
   @media (min-width: @desktop-width) {
     min-height: 300px;
   }
 }
+
 
 .hero-photo-catalog::after {
   content: url("../img/back-decor.svg");
@@ -29,25 +35,5 @@
   @media (min-width: @desktop-width) {
     content: url("../img/back-desktop-decor.svg");
     top: 300px;
-  }
-}
-
-.sedona-photo {
-  display: block;
-  text-align: center;
-  padding-top: 51px;
-
-  @media (min-width: @tablet-width) {
-    padding-top: 25px;
-  }
-}
-
-.sedona-photo svg {
-  @media (min-width: @tablet-width) {
-    width: 457px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 460px;
   }
 }

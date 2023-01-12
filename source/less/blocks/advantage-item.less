@@ -1,11 +1,6 @@
 .advantage-item {
   display: flex;
   flex-direction: column;
-  max-height: 140px;
-
-  &--numbers {
-    padding-bottom: 30px;
-  }
 
   &--icon {
     display: flex;
@@ -19,6 +14,15 @@
   }
 }
 
+.advantage-item--numbers {
+  border-bottom: 1px solid #d6d6d6;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: none;
+  }
+}
+
+
 .advantage-item-wrapper {
   padding-top: 32px;
   padding-left: 5px;
@@ -29,7 +33,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 105px;
+    padding-top: 0;
   }
 }
 
@@ -38,17 +42,31 @@
   padding: 66px 18px 11px 18px;
   .advantage-item ();
 
+  span {
+    display: contents;
+  }
+
   @media (min-width: @tablet-width) {
-    padding: 54px 36px 11px 36px;
+    padding: 44px 36px 11px 36px;
     min-width: 180px;
     margin: 0;
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
+
+    span::after {
+      content: "\A";
+      white-space: normal;
+    }
   }
 
   @media (min-width: @desktop-width) {
-    padding: 52px 90px 11px 82px;
+    padding: 52px 50px 11px 50px;
+
+    span::after {
+      content: "\A";
+      white-space: normal;
+    }
   }
 
   &--icon {
@@ -57,7 +75,7 @@
     display: block;
 
     @media (min-width: @desktop-width) {
-      padding: 63px 90px 11px 86px;
+      padding: 25px 90px 11px 86px;
     }
   }
 
@@ -74,13 +92,22 @@
   &--numbers {
     padding: 20px 18px 11px 18px;
 
+    span {
+      display: none;
+    }
+
     @media (min-width: @tablet-width) {
       min-width: 100px;
-      padding: 54px 50px 11px 50px;
+      padding: 44px 50px 11px 50px;
     }
 
     @media (min-width: @desktop-width) {
       padding: 60px 140px 11px 140px;
+    }
+
+    span::after {
+      content: "\A";
+      white-space: normal;
     }
   }
 }
@@ -114,7 +141,7 @@
 
     @media (min-width: @tablet-width) {
       min-width: 154px;
-      padding: 25px 44px 0 44px;
+      padding: 20px 42px 0 42px;
 
       span::after {
         content: "\A";
@@ -128,7 +155,7 @@
   }
 
   &--numbers {
-    padding: 16px 32px 0 32px;
+    padding: 16px 32px 30px 32px;
 
     span {
       display: contents;
@@ -164,9 +191,15 @@
   }
 
   @media (min-width: @desktop-width) {
-    position: absolute;
-    top: 1050px;
-    padding: 40px 90px;
+    position: relative;
+    top: 25px;
     width: 80px;
+    margin-left: 70px;
+  }
+}
+
+.advantage-item:nth-of-type(3) .advantage-item__icon {
+  @media (min-width: @desktop-width) {
+    width: 100px;
   }
 }

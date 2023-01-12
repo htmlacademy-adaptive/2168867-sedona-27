@@ -43,24 +43,6 @@
   }
 }
 
-.player-button {
-  position: relative;
-  top: -125px;
-  left: 110px;
-  border: none;
-  background-color: transparent;
-
-  @media (min-width: @tablet-width) {
-    left: 50%;
-    top: -50%;
-    transform: translate(-50%, 0);
-  }
-
-  @media (min-width: @desktop-width) {
-    top: -55%;
-  }
-}
-
 .player-poster {
   margin: 0;
   min-width: 280px;
@@ -94,5 +76,23 @@
 
   @media (min-width: @desktop-width) {
     top: 0;
+  }
+}
+
+.button--player {
+  position: relative;
+  top: -125px;
+  left: 110px;
+  border: none;
+  background-color: transparent;
+
+  @media (min-width: @tablet-width) {
+    left: 50%;
+    top: -50%;
+    transform: translate(-50%, 0);
+  }
+
+  @media (min-width: @desktop-width) {
+    top: -55%;
   }
 }
