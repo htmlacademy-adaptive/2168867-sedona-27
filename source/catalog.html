@@ -2,257 +2,177 @@
 <html class="page" lang="ru">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Фото и видео Седоны</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
-  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
-  <link rel="manifest" href="manifest.webmanifest">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Фото и видео Седоны</title>
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="icon" href="favicon.ico">
+	<!-- 32×32 -->
+	<link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+	<link rel="apple-touch-icon" href="img/favicons/apple.png">
+	<!-- 180×180 -->
+	<link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
-  <div class="page-container">
-    <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <svg class="page-header__icon" width="185" height="96" aria-label="Логотип городка Седона.">
-          <use xlink:href="img/sprite.svg#logo-icon"></use>
-        </svg>
+	<div class="page-container">
+		<header class="page-header">
+			<a class="page-header__logo" href="index.html">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img src="img/logo.svg" alt="Центральная площадь города." width="185" height="96">
+        </picture>
       </a>
-      <nav class="header-nav header-nav--closed header-nav--nojs">
-        <button class="header-nav__toggle" type="button">
-          <span class="visually-hidden">Развернуть меню</span>
-        </button>
-
-        <div class="header-nav__wrapper">
-          <ul class="header-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="index.html">
-                Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link site-list__link--current" href="#">
-                Фото и видео</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Форма отзыва</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">Html academy</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-
-    <main class="main-container">
-
-      <div class="hero-photo-catalog">
-        <h2 class="visually-hidden">Фото гор Седоны</h2>
-        <div class="sedona-photo">
-          <svg width="230" height="40" aria-label="Надпись Седона на фоне гор.">
-            <use xlink:href="img/sprite.svg#sedona-icon"></use>
-          </svg>
-        </div>
-      </div>
-      <section class="hero-catalog">
-        <div class="hero-catalog__wrapper">
-          <h1 class="hero-catalog__title">
-            Фото и видео
-          </h1>
-          <p class="hero-catalog__description">Не можете решиться на путешествие из-за курса?<span></span> Фотографии
-            помогут вам
-            забыть о политике и экономике.</p>
-        </div>
-      </section>
-
-      <section class="photos-sedona">
-        <h2 class="visually-hidden">Посмотрите какая тут красота</h2>
-        <section class="object-card object-card--stretch">
-          <a class="object-card__wrapper object-card__wrapper--stretch" href="#">
-            <picture>
-              <source media="(min-width: 1200px)"
-                srcset="./img/catalog/sedona-space-desktop.jpg 1x, ./img/catalog/sedona-space-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)"
-                srcset="./img/catalog/sedona-space-tablet.jpg 1x, ./img/catalog/sedona-space-tablet@2x.jpg 2x">
-              <img src="./img/catalog/sedona-space.jpg" srcset="./img/catalog/sedona-space@2x.jpg 2x"
-                alt="Просторы Седоны." width="280" height="280">
-            </picture>
-            <span class="visually-hidden">Развернуть фото в полный экран</span>
-          </a>
-          <div class="object-card__about object-card__about--stretch">
-            <div class="object-card__name">
-              <h3 class="object-card__title">Неродные просторы</h3>
-              <p class="object-card__text">Автор фото: Борис</p>
-            </div>
-            <a class="object-card__likes" href="#" aria-label="Значок лайка.">
-              <svg class="object-card__icon" width="23" height="21">
-                <use xlink:href="img/sprite.svg#likes"></use>
-              </svg>
-              <span class="object-card__count">1350</span>
-            </a>
-          </div>
-        </section>
-
-        <section class="object-card">
-          <a class="object-card__wrapper" href="#">
-            <picture>
-              <source media="(min-width: 1200px)"
-                srcset="./img/catalog/sedona-flora-desktop.jpg 1x, ./img/catalog/sedona-flora@2x.jpg 2x">
-              <source media="(min-width: 768px)"
-                srcset="./img/catalog/sedona-flora-tablet.jpg 1x, ./img/catalog/sedona-flora@2x.jpg 2x">
-              <img src="./img/catalog/sedona-flora.jpg" srcset="./img/catalog/sedona-flora@2x.jpg 2x"
-                alt="Необычная местная фауна." width="280" height="280">
-            </picture>
-            <span class="visually-hidden">Развернуть фото в полный экран</span>
-          </a>
-          <div class="object-card__about">
-            <div class="object-card__name">
-              <h3 class="object-card__title">Местная растительность</h3>
-              <p class="object-card__text">Автор фото: Сергей</p>
-            </div>
-            <a class="object-card__likes" href="#">
-              <svg class="object-card__icon" width="23" height="21">
-                <use xlink:href="img/sprite.svg#likes"></use>
-              </svg>
-              <span class="object-card__count">143</span>
-            </a>
-          </div>
-        </section>
-
-        <section class="object-card">
-          <a class="object-card__wrapper" href="#">
-            <picture>
-              <source media="(min-width: 1200px)"
-                srcset="./img/catalog/sedona-road-desktop.jpg 1x, ./img/catalog/sedona-road@2x.jpg 2x">
-              <source media="(min-width: 768px)"
-                srcset="./img/catalog/sedona-road-tablet.jpg 1x, ./img/catalog/sedona-road@2x.jpg 2x">
-              <img src="./img/catalog/sedona-road.jpg" srcset="./img/catalog/sedona-road@2x.jpg 2x"
-                alt="Дорога на север Седоны." width="280" height="280">
-            </picture>
-            <span class="visually-hidden">Развернуть фото в полный экран</span>
-          </a>
-          <div class="object-card__about">
-            <div class="object-card__name">
-              <h3 class="object-card__title">Дорога на север</h3>
-              <p class="object-card__text">Автор фото: Петр</p>
-            </div>
-            <a class="object-card__likes" href="#">
-              <svg class="object-card__icon" width="23" height="21" aria-label="Значок лайка.">
-                <use xlink:href="img/sprite.svg#likes"></use>
-              </svg>
-              <span class="object-card__count">96</span>
-            </a>
-          </div>
-        </section>
-
-        <section class="object-card">
-          <a class="object-card__wrapper" href="#">
-            <picture>
-              <source media="(min-width: 1200px)"
-                srcset="./img/catalog/devil-bridge-desktop.jpg 1x, ./img/catalog/devil-bridge-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)"
-                srcset="./img/catalog/devil-bridge-tablet.jpg 1x, ./img/catalog/devil-bridge-tablet@2x.jpg 2x">
-              <img src="./img/catalog/devil-bridge.jpg" srcset="./img/catalog/devil-bridge@2x.jpg 2x"
-                alt="Мост дьявола в Седоне." width="280" height="280">
-            </picture>
-            <span class="visually-hidden">Развернуть фото в полный экран</span>
-          </a>
-          <div class="object-card__about">
-            <div class="object-card__name">
-              <h3 class="object-card__title">Мост дьявола</h3>
-              <p class="object-card__text">Автор фото: Антон</p>
-            </div>
-            <a class="object-card__likes" href="#">
-              <svg class="object-card__icon" width="23" height="21" aria-label="Значок лайка.">
-                <use xlink:href="img/sprite.svg#likes"></use>
-              </svg>
-              <span class="object-card__count">254</span>
-            </a>
-          </div>
-        </section>
-      </section>
-
-      <section class="player">
-        <div class="player__wrapper">
-          <h2 class="player__title">Все еще сомневаетесь?</h2>
-          <p class="player__description">Смотрите видеопрезентацию и скорее за билетами, пока они<span></span> не
-            подорожали в очередной раз!</p>
-          <div class="player-poster">
-            <picture>
-              <source type="image/webp" media="(min-width: 1200px)"
-                srcset="./img/catalog/presentation-desktop.webp 1x, ./img/catalog/presentation@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="./img/catalog/presentation-tablet.webp 1x, ./img/catalog/presentation@2x.webp 2x">
-              <source type="image/webp"
-                srcset="./img/catalog/presentation.webp 1x, ./imgcatalog/presentation@2x.webp 2x">
-              <source media="(min-width: 1200px)"
-                srcset="./img/catalog/presentation-desktop.jpg 1x, ./img/catalog/presentation-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)"
-                srcset="./img/catalog/presentation-tablet.jpg 1x, ./img/catalog/presentation-tablet@2x.jpg 2x">
-              <img src="./img/catalog/presentation.jpg" srcset="./img/catalog/presentation@2x.jpg 2x"
-                alt="Презентация городка Седона." width="280" height="177">
-            </picture>
-            <button class="button button--player">
-              <span class="visually-hidden">Cтарт</span>
-              <svg class="button__icon" width="48" height="54" aria-label="Кпопка запуска трансляции.">
-                <use xlink:href="img/sprite.svg#start-button"></use>
-              </svg>
-            </button>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer footer--page">
-      <div class="footer__wrapper">
-        <div class="footer__hashtag footer__hashtag--page">
-          <p class="footer__hashtag-text">#visitsedona</p>
-        </div>
-        <div class="footer__social social">
-          <b class="social__title visually-hidden">Ищите нас в соцсетях</b>
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-                <svg class="social__link__icon" width="48" height="48" aria-label="Иконка группы Вконтакте.">
-                  <use xlink:href="img/sprite.svg#vk-icon"></use>
-                </svg>
-                <span class="visually-hidden">Мы в Вконтакте</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-                <svg class="social__link__icon" width="48" height="48" aria-label="Иконка группы в Телеграм.">
-                  <use xlink:href="img/sprite.svg#tg-icon"></use>
-                </svg>
-                <span class="visually-hidden">Мы в Телеграме</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://www.youtube.com/user/htmlacademyru">
-                <svg class="social__link__icon" width="48" height="48" aria-label="Иконка канала на Ютубе.">
-                  <use xlink:href="img/sprite.svg#youtube-icon"></use>
-                </svg>
-                <span class="visually-hidden">Мы в Ютубе</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__copyright copyright">
-          <b class="copyright__text">Разработано</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="copyright__icon" width="27" height="35" aria-label="Иконка html академии.">
-              <use xlink:href="img/sprite.svg#html-academy-icon"></use>
-            </svg>
-            <span class="visually-hidden">html academy</span>
-          </a>
-        </div>
-      </div>
-
-    </footer>
-  </div>
-  <script src="scrict.js"></script>
+			<nav class="header-nav header-nav--closed header-nav--nojs">
+				<button class="header-nav__toggle" type="button"><span class="visually-hidden">Развернуть меню</span></button>
+				<div class="header-nav__wrapper">
+					<ul class="header-nav__list site-list">
+						<li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
+						<li class="site-list__item"><a class="site-list__link site-list__link--current" href="#">Фото и видео</a></li>
+						<li class="site-list__item"><a class="site-list__link" href="form.html">Форма отзыва</a></li>
+						<li class="site-list__item"><a class="site-list__link" href="#">Html academy</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<main class="main-container">
+			<div class="hero-photo-catalog">
+				<h2 class="visually-hidden">Фото гор Седоны</h2>
+				<div class="sedona-photo">
+					<svg width="230" height="40" aria-label="Надпись Седона на фоне гор.">
+						<use xlink:href="img/sprite.svg#sedona"></use>
+					</svg>
+				</div>
+			</div>
+			<section class="hero-catalog">
+				<div class="hero-catalog__wrapper">
+					<h1 class="hero-catalog__title">Фото и видео</h1>
+					<p class="hero-catalog__description">Не можете решиться на путешествие из-за курса?<span></span> Фотографии помогут вам забыть о политике и экономике.</p>
+				</div>
+			</section>
+			<section class="photos-sedona">
+				<h2 class="visually-hidden">Посмотрите какая тут красота</h2>
+				<section class="object-card object-card--stretch">
+					<a class="object-card__wrapper object-card__wrapper--stretch" href="#">
+						<picture>
+							<source media="(min-width: 1200px)" srcset="./img/catalog/sedona-space-desktop.jpg, ./img/catalog/sedona-space-desktop@2x.jpg 2x">
+							<source media="(min-width: 768px)" srcset="./img/catalog/sedona-space-tablet.jpg, ./img/catalog/sedona-space-tablet@2x.jpg 2x"><img src="./img/catalog/sedona-space.jpg" srcset="./img/catalog/sedona-space@2x.jpg 2x" alt="Просторы Седоны." width="280" height="280"></picture><span class="visually-hidden">Развернуть фото в полный экран</span></a>
+					<div class="object-card__about object-card__about--stretch">
+						<div class="object-card__name">
+							<h3 class="object-card__title">Неродные просторы</h3>
+							<p class="object-card__text">Автор фото: Борис</p>
+						</div>
+						<a class="object-card__likes" href="#" aria-label="Значок лайка.">
+							<svg class="object-card__icon" width="23" height="21">
+								<use xlink:href="img/sprite.svg#like"></use>
+							</svg> <span class="object-card__count">1350</span></a>
+					</div>
+				</section>
+				<section class="object-card">
+					<a class="object-card__wrapper" href="#">
+						<picture>
+							<source media="(min-width: 1200px)" srcset="./img/catalog/sedona-flora-desktop.jpg, ./img/catalog/sedona-flora@2x.jpg 2x">
+							<source media="(min-width: 768px)" srcset="./img/catalog/sedona-flora-tablet.jpg, ./img/catalog/sedona-flora@2x.jpg 2x"><img src="./img/catalog/sedona-flora.jpg" srcset="./img/catalog/sedona-flora@2x.jpg 2x" alt="Необычная местная фауна." width="280" height="280"></picture><span class="visually-hidden">Развернуть фото в полный экран</span></a>
+					<div class="object-card__about">
+						<div class="object-card__name">
+							<h3 class="object-card__title">Местная растительность</h3>
+							<p class="object-card__text">Автор фото: Сергей</p>
+						</div>
+						<a class="object-card__likes" href="#">
+							<svg class="object-card__icon" width="23" height="21">
+								<use xlink:href="img/sprite.svg#like"></use>
+							</svg> <span class="object-card__count">143</span></a>
+					</div>
+				</section>
+				<section class="object-card">
+					<a class="object-card__wrapper" href="#">
+						<picture>
+							<source media="(min-width: 1200px)" srcset="./img/catalog/sedona-road-desktop.jpg, ./img/catalog/sedona-road@2x.jpg 2x">
+							<source media="(min-width: 768px)" srcset="./img/catalog/sedona-road-tablet.jpg, ./img/catalog/sedona-road@2x.jpg 2x"><img src="./img/catalog/sedona-road.jpg" srcset="./img/catalog/sedona-road@2x.jpg 2x" alt="Дорога на север Седоны." width="280" height="280"></picture><span class="visually-hidden">Развернуть фото в полный экран</span></a>
+					<div class="object-card__about">
+						<div class="object-card__name">
+							<h3 class="object-card__title">Дорога на север</h3>
+							<p class="object-card__text">Автор фото: Петр</p>
+						</div>
+						<a class="object-card__likes" href="#">
+							<svg class="object-card__icon" width="23" height="21" aria-label="Значок лайка.">
+								<use xlink:href="img/sprite.svg#like"></use>
+							</svg> <span class="object-card__count">96</span></a>
+					</div>
+				</section>
+				<section class="object-card">
+					<a class="object-card__wrapper" href="#">
+						<picture>
+							<source media="(min-width: 1200px)" srcset="./img/catalog/devil-bridge-desktop.jpg, ./img/catalog/devil-bridge-desktop@2x.jpg 2x">
+							<source media="(min-width: 768px)" srcset="./img/catalog/devil-bridge-tablet.jpg, ./img/catalog/devil-bridge-tablet@2x.jpg 2x"><img src="./img/catalog/devil-bridge.jpg" srcset="./img/catalog/devil-bridge@2x.jpg 2x" alt="Мост дьявола в Седоне." width="280" height="280"></picture><span class="visually-hidden">Развернуть фото в полный экран</span></a>
+					<div class="object-card__about">
+						<div class="object-card__name">
+							<h3 class="object-card__title">Мост дьявола</h3>
+							<p class="object-card__text">Автор фото: Антон</p>
+						</div>
+						<a class="object-card__likes" href="#">
+							<svg class="object-card__icon" width="23" height="21" aria-label="Значок лайка.">
+								<use xlink:href="img/sprite.svg#like"></use>
+							</svg> <span class="object-card__count">254</span></a>
+					</div>
+				</section>
+			</section>
+			<section class="player">
+				<div class="player__wrapper">
+					<h2 class="player__title">Все еще сомневаетесь?</h2>
+					<p class="player__description">Смотрите видеопрезентацию и скорее за билетами, пока они<span></span> не подорожали в очередной раз!</p>
+					<div class="player-poster">
+						<picture>
+							<source type="image/webp" media="(min-width: 1200px)" srcset="./img/catalog/presentation-desktop.webp, ./img/catalog/presentation@2x.webp 2x">
+							<source type="image/webp" media="(min-width: 768px)" srcset="./img/catalog/presentation-tablet.webp, ./img/catalog/presentation@2x.webp 2x">
+							<source type="image/webp" srcset="./img/catalog/presentation.webp, ./imgcatalog/presentation@2x.webp 2x">
+							<source media="(min-width: 1200px)" srcset="./img/catalog/presentation-desktop.jpg, ./img/catalog/presentation-desktop@2x.jpg 2x">
+							<source media="(min-width: 768px)" srcset="./img/catalog/presentation-tablet.jpg, ./img/catalog/presentation-tablet@2x.jpg 2x"><img src="./img/catalog/presentation.jpg" srcset="./img/catalog/presentation@2x.jpg 2x" alt="Презентация городка Седона." width="280" height="177"></picture>
+						<button class="button button--player"><span class="visually-hidden">Cтарт</span>
+							<svg class="button__icon" width="48" height="54" aria-label="Кпопка запуска трансляции.">
+								<use xlink:href="img/sprite.svg#start-button"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer footer--page">
+			<div class="footer__wrapper">
+				<div class="footer__hashtag footer__hashtag--page">
+					<p class="footer__hashtag-text">#visitsedona</p>
+				</div>
+				<div class="footer__social social social--page"><b class="social__title visually-hidden">Ищите нас в соцсетях</b>
+					<ul class="social__list">
+						<li class="social__item">
+							<a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+								<svg class="social__link__icon" width="48" height="48" aria-label="Иконка группы Вконтакте.">
+									<use xlink:href="img/sprite.svg#vk"></use>
+								</svg> <span class="visually-hidden">Мы в Вконтакте</span></a>
+						</li>
+						<li class="social__item">
+							<a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+								<svg class="social__link__icon" width="48" height="48" aria-label="Иконка группы в Телеграм.">
+									<use xlink:href="img/sprite.svg#telegram"></use>
+								</svg> <span class="visually-hidden">Мы в Телеграме</span></a>
+						</li>
+						<li class="social__item">
+							<a class="social__link social__link--telegram" href="https://www.youtube.com/user/htmlacademyru">
+								<svg class="social__link__icon" width="48" height="48" aria-label="Иконка канала на Ютубе.">
+									<use xlink:href="img/sprite.svg#youtube"></use>
+								</svg> <span class="visually-hidden">Мы в Ютубе</span></a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__copyright footer__copyright--form copyright"><b class="copyright__text">Разработано</b>
+					<a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+						<svg class="copyright__icon" width="27" height="35" aria-label="Иконка html академии.">
+							<use xlink:href="img/sprite.svg#htmlacademy"></use>
+						</svg> <span class="visually-hidden">html academy</span></a>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="scrict.js"></script>
 </body>
-
-</html>
