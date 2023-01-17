@@ -1,0 +1,27 @@
+.fieldset__item {
+  margin: 0;
+  padding: 0 0 10px 0;
+
+  @media (min-width: @desktop-width) {
+    padding: 0 10px 10px 0;
+  }
+
+  &--choice {
+    padding: 33px 0 0 0;
+
+    @media (min-width: @desktop-width) {
+      padding: 0 10px 35px 0;
+    }
+  }
+}
+
+.fieldset__item--choice:nth-last-child(1) {
+  padding-bottom: 0;
+}
+
+
+.fieldset:nth-child(1) .fieldset__item {
+  @media (min-width: @tablet-width) {
+    margin-right: 20px;
+  }
+}

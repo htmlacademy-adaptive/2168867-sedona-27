@@ -1,48 +1,67 @@
-.social {
-  margin: 0;
-  padding: 0 0 30px 15px;
+.footer__social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  margin: 0 auto 38px;
   min-height: 48px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 0;
+    margin: 0 0 0 10px;
   }
 
-  @media (min-width: @desktop-width) {
+  &--form {
+    @media (min-width: @tablet-width) {
+      margin: 0 10px 0 0;
+    }
+  }
+
+  &--catalog {
+    margin: 0 5px 0 0;
+  }
+}
+
+.social {
+  max-width: 264px;
+  min-height: 48px;
+
+  @media (min-width: @tablet-width) {
     padding: 0;
   }
 
   &--page {
     @media (min-width: @tablet-width) {
-      padding-top: 55px;
+      padding: 55px 0 0 50px;
     }
 
     @media (min-width: @desktop-width) {
-      padding-top: 0;
+      padding: 55px 0 0 30px;
     }
   }
 }
 
 .social__list {
+  padding: 0;
+  list-style: none;
   display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0 65px 0 65px;
-  min-width: 166px;
-
-  @media (min-width: @tablet-width) {
-    padding: 0 65px 0 115px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding: 0 65px 0 65px;
-  }
+  gap: 6px;
 }
 
 .social__link {
-  margin: 0;
-}
+  position: relative;
+  width: 48px;
+  height: 48px;
+  fill: #81b3d2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-.social__item {
-  list-style: none;
-  margin-right: 6px;
+  &:focus,
+  &:hover {
+    fill: #669ec0;
+  }
+
+  &:active {
+    fill: #5496bd;
+  }
 }

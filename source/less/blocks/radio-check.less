@@ -1,0 +1,63 @@
+.fieldset-radio,
+.fieldset-checkbox {
+  appearance: none;
+  position: absolute;
+}
+
+.fieldset-radio ~ .fieldset__text::before {
+  .fieldset-before ();
+  border-radius: 50px;
+  left: -1px;
+}
+
+.fieldset-radio:focus ~ .fieldset__text::before {
+  background-color: #d5d5d5;
+}
+
+.fieldset-radio:hover ~ .fieldset__text::before {
+  background-color: #e5e5e5;
+}
+
+.fieldset-radio:checked ~ .fieldset__text::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 50px;
+  background-color: #333333;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 15px;
+}
+
+.fieldset-radio:checked ~ .fieldset__text:focus::after {
+  background-color: #333333 30%;
+}
+
+.fieldset-checkbox ~ .fieldset__text::before {
+  .fieldset-before ();
+  border-radius: 4px;
+  width: 44px;
+}
+
+.fieldset-checkbox:focus ~ .fieldset__text::before {
+  background-color: #d5d5d5;
+}
+
+.fieldset-checkbox:hover ~ .fieldset__text::before {
+  background-color: #e5e5e5;
+}
+
+.fieldset-checkbox:checked ~ .fieldset__text::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 1px;
+  border-left: 3px solid #333333;
+  border-bottom: 3px solid #333333;
+  width: 22px;
+  height: 12px;
+  top: 2px;
+  left: 10px;
+  transform: rotate(-45deg);
+}
