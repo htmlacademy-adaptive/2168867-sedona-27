@@ -183,8 +183,12 @@
 }
 
 .button--fieldset {
-  .button ();
   .title ();
+  background-color: #81b3d2;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
   width: 280px;
   padding: 20px 40px 15px 40px;
 
@@ -194,5 +198,14 @@
 
   @media (min-width: @desktop-width) {
     width: 384px;
+  }
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #669ec0;
+    color: rgba(255, 255, 255, 0.3);
   }
 }
