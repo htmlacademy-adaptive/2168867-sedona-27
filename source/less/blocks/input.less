@@ -1,0 +1,43 @@
+.fieldset__input {
+  .title ();
+  background-color: #f2f2f2;
+  border: #f2f2f2 solid 2px;
+  padding: 14px 16px;
+  margin: 0;
+  min-width: 245px;
+  font-family: "PT Sans", "Arial", sans-serif;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 400px;
+  }
+
+  &--contact {
+    @media (min-width: @desktop-width) {
+      min-width: 370px;
+      padding: 16px 0 16px 20px;
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  &--tel,
+  &--mail {
+    .description ();
+    text-transform: uppercase;
+    top: 0;
+    left: 15px;
+  }
+}
+
+.fieldset__input:hover {
+  background-color: #e5e5e5;
+  border: #e5e5e5 solid 2px;
+}
+
+.fieldset__input:focus {
+  border: #e5e5e5 solid 2px;
+  background-color: #ffffff;
+}

@@ -58,15 +58,11 @@
   }
 }
 
-.object-card:nth-last-of-type(1) {
-  padding-bottom: 5px;
-}
-
-
 .object-card__about {
   display: block;
   margin: 0;
   padding: 20px 0 0 0;
+  box-sizing: border-box;
 
 
   @media (min-width: @tablet-width) {
@@ -82,7 +78,7 @@
     display: flex;
     position: absolute;
     bottom: 0;
-    width: 360px;
+    width: 100%;
   }
 }
 
@@ -90,7 +86,7 @@
   @media (min-width: @desktop-width) {
     position: absolute;
     bottom: 0;
-    width: 1160px;
+    width: 100%;
   }
 }
 
@@ -129,10 +125,9 @@
 
 .object-card__likes svg {
   margin-right: 10px;
-  fill-opacity: 0.3;
+  fill: rgba(0, 0, 0, 0.3);
 
   @media (min-width: @desktop-width) {
     fill: #ffffff;
-    fill-opacity: 1;
   }
 }

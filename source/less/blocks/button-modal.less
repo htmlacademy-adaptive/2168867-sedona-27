@@ -1,21 +1,21 @@
-.button--accept {
+.button {
   .button ();
   .title ();
-  width: 180px;
-  margin: 20px;
+  font-size: 21px;
+  line-height: 26px;
+  cursor: pointer;
+  padding: 16px;
 
-  @media (min-width: @tablet-width) {
-    min-width: 270px;
+  &--accept {
+    width: 180px;
+
+    @media (min-width: @tablet-width) {
+      width: 270px;
+    }
   }
-}
 
-.button--close {
-  width: 280px;
-  margin: 20px;
-
-  @media (min-width: @tablet-width) {
-    min-width: 458px;
-    margin: 20px 0 0 0;
-    padding: 7px 0 0 0;
+  &--close {
+    width: 100%;
+    padding: 16px;
   }
 }

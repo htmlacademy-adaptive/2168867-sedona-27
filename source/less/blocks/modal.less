@@ -1,18 +1,25 @@
 .modal {
-  background-color: #ffffff;
+  background-color: #ffffff 30%;
   box-sizing: border-box;
   margin: auto;
-  width: 320px;
+  height: 100%;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   position: fixed;
+  /*display: flex;*/
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  overflow: auto;
   display: none;
 }
+
 
 .modal__wrapper {
   position: fixed;
   display: flex;
   background-color: #ffffff;
   left: 0;
+  top: 0;
 
   &--correct {
     top: 70%;
@@ -33,7 +40,7 @@
 
     @media (min-width: @tablet-width) {
       width: 400px;
-      height: 347px;
+      min-height: 347px;
       box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
     }
   }

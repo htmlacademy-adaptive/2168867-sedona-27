@@ -76,7 +76,7 @@ return del('build');
 };
 //Copy
 const copy = (done) => {
-  gulp.src(['source/fonts/*.{woff1,woff,woff2}', 'sourse/*.ico', ], {
+  gulp.src(['source/fonts/*.{woff1,woff,woff2}', 'source/*.ico', 'source/*.webmanifest'], {
     base: 'source'
   }).pipe(gulp.dest('build'))
   done();
@@ -89,9 +89,10 @@ const reload = () => {
 // Watcher
 const watcher = () => {
   gulp.watch('source/less/**/*.less'), gulp.series(styles);
-  gulp.watch('source/*.js/scrit.js'), gulp.series(scripts);
+  gulp.watch('source/js/script.js'), gulp.series(scripts);
+  gulp.watch('source/*.html', gulp.series(html, reload));
 }
 //Build
-export const build = gulp.series(clean, copy, optimizeImages, gulp.parallel(styles, scripts, svg, sprite, createWebp), )
+export const build = gulp.series(clean, copy, optimizeImages, gulp.parallel(html, styles, scripts, svg, sprite, createWebp), )
 //Default
 export default gulp.series(clean, copy, copyImages, gulp.parallel(html, styles, scripts, svg, sprite, createWebp), gulp.series(server, watcher))
