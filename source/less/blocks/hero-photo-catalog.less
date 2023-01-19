@@ -1,31 +1,30 @@
 .hero-photo-catalog {
-  background: url("../img/catalog/back-catalog.jpg") no-repeat center;
+  background: url("../img/catalog/back-catalog.jpg");
+  background-color: #66a8e1;
+  min-height: 159px;
   width: 100%;
-  height: 158px;
   margin: 0;
 
   @media (min-width: @tablet-width) {
-    height: 290px;
-    background: url("../img/back-tablet.jpg") no-repeat bottom;
+    min-height: 290px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/catalog/back-catalog@2x.jpg");
-      background-size: cover;
+      background-size: auto;
+      background-position: center;
     }
   }
 
   @media (min-width: @desktop-width) {
-    min-height: 300px;
+    min-height: 290px;
   }
 }
-
 
 .hero-photo-catalog::after {
   content: url("../img/back-decor.svg");
   height: 57px;
-  width: 100%;
   position: absolute;
-  top: 157px;
+  top: 159px;
 
   @media (min-width: @tablet-width) {
     content: url("../img/back-tablet-decor.svg");
@@ -34,6 +33,6 @@
 
   @media (min-width: @desktop-width) {
     content: url("../img/back-desktop-decor.svg");
-    top: 300px;
+    top: 290px;
   }
 }

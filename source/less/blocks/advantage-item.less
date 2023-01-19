@@ -29,11 +29,11 @@
 
   @media (min-width: @tablet-width) {
     margin: 0;
-    padding-top: 155px;
+    padding-top: 45px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 0;
+    padding-top: 60px;
   }
 }
 
@@ -183,23 +183,33 @@
   min-width: 40px;
 
   @media (min-width: @tablet-width) {
-    position: absolute;
-    padding: 40px 90px;
+    position: relative;
+    padding: 55px 90px;
     width: 77px;
     height: 72px;
-    top: 1050px;
+    top: 0;
   }
 
   @media (min-width: @desktop-width) {
     position: relative;
+    padding: 40px 90px;
     top: 25px;
+    left: 0;
     width: 80px;
+    height: 73px;
     margin-left: 70px;
   }
 }
 
-.advantage-item:nth-of-type(3) .advantage-item__icon {
+
+.advantage-item__icon svg {
+  @media (min-width: @tablet-width) {
+    width: 77px;
+    height: 72px;
+  }
+
   @media (min-width: @desktop-width) {
-    width: 100px;
+    width: 80px;
+    height: 73px;
   }
 }

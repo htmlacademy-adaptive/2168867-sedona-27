@@ -3,8 +3,6 @@
   min-height: 55px;
 
   @media (min-width: @tablet-width) {
-    display: flex;
-    justify-content: space-between;
     margin: 0 auto;
     background-color: #ffffff;
   }
@@ -12,6 +10,9 @@
 
 .header-nav__wrapper {
   width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .header-nav--closed .header-nav__toggle::before {
