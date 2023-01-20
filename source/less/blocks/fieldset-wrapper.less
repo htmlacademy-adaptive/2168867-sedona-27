@@ -2,24 +2,25 @@
   position: relative;
 }
 
-.fieldset__wrapper--tel::after,
-.fieldset__wrapper--mail::after {
+.fieldset__wrapper--icon-tel {
+  height: 54px;
+  width: 58px;
+  background-color: #e6e6e6;
+  display: flex;
+  position: absolute;
+  top: 2px;
+  left: 220px;
+
   @media (min-width: @desktop-width) {
-    height: 52px;
-    width: 56px;
+    left: 350px;
+    height: 58px;
   }
 }
 
-.fieldset__wrapper--mail::after {
-  content: url("../img/form/mail.svg");
-  right: 3px;
-  top: 0;
-  position: absolute;
-}
 
-.fieldset__wrapper--tel::after {
-  content: url("../img/form/tel.svg");
-  right: 3px;
-  top: 0;
+.fieldset__wrapper--icon-tel svg {
+  display: flex;
   position: absolute;
+  top: 20px;
+  left: 20px;
 }
