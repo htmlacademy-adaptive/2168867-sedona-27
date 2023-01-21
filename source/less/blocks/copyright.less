@@ -1,6 +1,6 @@
 .footer__copyright {
   max-width: 200px;
-  margin: 0  auto;
+  margin: 0  60px 0 55px;
   text-align: center;
 
   @media (min-width: @tablet-width) {
@@ -19,7 +19,7 @@
 
 .copyright {
   @media (min-width: @tablet-width) {
-    margin: 15px 0 0 0;
+    margin: 0;
     height: 37px;
     min-width: 125px;
   }
@@ -72,6 +72,13 @@
 }
 
 .copyright__icon {
+  position: relative;
+  left: 10px;
+
+  @media (min-width: @tablet-width) {
+    left: 0;
+  }
+
   &:focus,
   &:hover {
     fill: #81b3d2;

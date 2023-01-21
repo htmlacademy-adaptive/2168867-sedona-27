@@ -1,8 +1,17 @@
+.map {
+  background-image: url("../img/index/map.webp");
+
+  @media (min-width: @tablet-width) {
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/map-tablet@2x.webp");
+    }
+  }
+}
+
 .map-photo {
   display: block;
   min-width: 320px;
   height: 350px;
-  background-image: url("./img/index/map.webp");
   background-color: #dee7b5;
 
   @media (min-width: @tablet-width) {
@@ -10,7 +19,6 @@
     height: 350px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("./img/index/map-tablet@2x.webp");
       background-size: cover;
       background-color: #dee7b5;
     }

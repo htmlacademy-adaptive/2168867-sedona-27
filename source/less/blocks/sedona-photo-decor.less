@@ -24,7 +24,13 @@
   }
 
   &--form {
-    padding-top: 50px;
+    @media (min-width: @tablet-width) {
+      padding-top: 60px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-top: 65px;
+    }
   }
 }
 

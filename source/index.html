@@ -24,7 +24,7 @@
           <img src="./img/logo.svg" alt="Лого города." width="185" height="96">
         </picture>
       </a>
-      <nav class="header-nav header-nav--opened header-nav--nojs">
+      <nav class="header-nav header-nav--closed header-nav--nojs">
         <button class="header-nav__toggle" type="button">
           <span class="visually-hidden">Развернуть меню</span>
         </button>
@@ -145,6 +145,11 @@
           </div>
           <div class="advantage-list__photo">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="./img/catalog/devil-bridge-desktop.webp 1x, ./img/catalog/devil-bridge-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="./img/catalog/devil-bridge-tablet.webp 1x, ./img/catalog/devil-bridge-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/catalog/devil-bridge.webp, ./img/catalog/devil-bridge@2x.webp 2x">
               <source media="(min-width: 1200px)"
                 srcset="./img/catalog/devil-bridge-desktop.jpg 1x, ./img/catalog/devil-bridge-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
