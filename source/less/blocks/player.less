@@ -52,8 +52,8 @@
 
   @media (min-width: @desktop-width) {
     min-width: 800px;
-    height: 500px;
-    padding: 20px 200px 0 180px;
+    height: 520px;
+    padding: 20px 180px 0 180px;
     margin: 0;
   }
 }
@@ -74,6 +74,13 @@
   }
 }
 
+.player-poster picture {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    height: 500px;
+  }
+}
+
 .button--player {
   text-decoration: none;
   text-transform: uppercase;
@@ -89,4 +96,9 @@
     top: -55%;
     transform: translate(-50%, 0);
   }
+
+  @media (min-width: @desktop-width) {
+    top: -60%;
+  }
 }
+
