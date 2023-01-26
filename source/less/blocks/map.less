@@ -4,6 +4,7 @@
   @media (min-width: @tablet-width) {
     @media (min-resolution: 2dppx) {
       background-image: url("../img/index/map-tablet@2x.webp");
+      margin-top: 7px;
     }
   }
 }
@@ -14,16 +15,25 @@
   height: 350px;
   background-color: #dee7b5;
   background-image: url("../img/index/map.webp");
+  background-size: contain;
 
   @media (min-width: @tablet-width) {
+    background-size: contain;
     min-width: 768px;
     height: 350px;
     background-image: url("../img/index/map-tablet@2x.webp");
 
     @media (min-resolution: 2dppx) {
-      background-size: cover;
+      background-size: contain;
       background-color: #dee7b5;
     }
+  }
+
+  @media (min-width: @tablet-width) {
+    min-width: 768px;
+    height: 350px;
+    background-image: url("../img/index/map-desktop@2x.webp");
+    margin-top: 10px;
   }
 }
 
