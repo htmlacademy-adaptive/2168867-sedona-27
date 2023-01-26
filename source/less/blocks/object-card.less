@@ -67,7 +67,7 @@
 
   @media (min-width: @tablet-width) {
     background-color: #f2f2f2;
-    padding: 16px 20px 8px 25px;
+    padding: 15px 20px 8px 20px;
     display: flex;
     justify-content: space-between;
   }
@@ -84,6 +84,10 @@
 }
 
 .object-card__about--stretch {
+  @media (min-width: @tablet-width) {
+    padding: 17px 20px 8px 20px;
+  }
+
   @media (min-width: @desktop-width) {
     position: absolute;
     bottom: 0;
@@ -104,7 +108,7 @@
 .object-card__text {
   .description ();
   margin: 0;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 
 .object-card__likes {
@@ -116,7 +120,7 @@
 
   @media (min-width: @tablet-width) {
     position: relative;
-    top: 10px;
+    top: 5px;
   }
 
   @media (min-width: @desktop-width) {

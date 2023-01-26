@@ -29,11 +29,19 @@
 
   @media (min-width: @tablet-width) {
     margin: 0;
-    padding-top: 40px;
+    padding-top: 38px;
+    padding-left: 0;
   }
 
   @media (min-width: @desktop-width) {
     padding-top: 56px;
+  }
+
+  &--icon {
+    @media (min-width: @tablet-width) {
+      margin-left: -5px;
+      margin-top: -5px;
+    }
   }
 }
 
@@ -98,7 +106,7 @@
 
     @media (min-width: @tablet-width) {
       min-width: 100px;
-      padding: 45px 50px 11px 50px;
+      padding: 55px 50px 11px 50px;
     }
 
     @media (min-width: @desktop-width) {
@@ -115,7 +123,7 @@
     padding-top: 19px;
 
     @media (min-width: @tablet-width) {
-      padding-top: 35px;
+      padding-top: 45px;
     }
 
     @media (min-width: @desktop-width) {
@@ -196,7 +204,7 @@
 
   @media (min-width: @tablet-width) {
     position: relative;
-    padding: 55px 90px;
+    padding: 60px 88px;
     width: 77px;
     height: 72px;
     top: 0;
@@ -213,11 +221,11 @@
   }
 }
 
-
 .advantage-item__icon svg {
   @media (min-width: @tablet-width) {
     width: 77px;
     height: 72px;
+    display: block;
   }
 
   @media (min-width: @desktop-width) {
