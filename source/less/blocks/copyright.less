@@ -35,7 +35,7 @@
 
   @media (min-width: @desktop-width) {
     min-width: 145px;
-    margin: 5px 15px 0 0;
+    margin: 7px 16px 0 0;
   }
 }
 
@@ -47,14 +47,24 @@
   position: relative;
   top: -15px;
 
+  @media (min-width: @tablet-width) {
+    top: -10px;
+    left: -5px;
+  }
+
   @media (min-width: @desktop-width) {
     left: 5px;
   }
 
   &--catalog {
+    @media (min-width: @tablet-width) {
+      top: -10px;
+      left: 0;
+    }
+
     @media (min-width: @desktop-width) {
       left: 24px;
-      top: -18px;
+      top: -14px;
     }
   }
 
@@ -96,6 +106,21 @@
     left: 7px;
   }
 
+  @media (min-width: @desktop-width) {
+    left: 15px;
+    top: -2px;
+  }
+
+  &--catalog {
+    left: 3px;
+    top: 2px;
+
+    @media (min-width: @desktop-width) {
+      left: 28px;
+      top: 0;
+    }
+  }
+
   &:focus,
   &:hover {
     fill: #81b3d2;
@@ -103,13 +128,5 @@
 
   &:active {
     fill: #b3b3b3;
-  }
-
-  @media (min-width: @desktop-width) {
-    left: 15px;
-  }
-
-  &--catalog {
-    left: 28px;
   }
 }
